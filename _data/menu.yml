@@ -1,0 +1,36 @@
+entries:
+  - title: lightweight javascript wallet library for crosschain projects
+    entries:
+      - title: minimal features necessary to support wallets
+      - title: optional client extension for more advanced features
+      - title: built-in serve providers to get wallet balances and transactional history
+      - title: built-in fee recommendations
+      - title: github repo
+        url: https://github.com/xchainjs/xchainjs-lib
+
+  - title: the library
+    entries:
+      - title: "crypto library <a href='https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-crypto'>create a BIP39 compatible keystore for all blockchains</a>"
+      - title: "util library <a href='https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-util'>access common utils</a>"
+      - title: "chain clients <a href='https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-client'>a single common interface for all blockchains</a>"
+
+  - title: supported chains
+    entries:
+      - title: bitcoin
+        url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-bitcoin
+      - title: binance
+        url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-binance
+      - title: cosmos
+        url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-cosmos
+      - title: thorchain
+        url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-thorchain
+      - title: polkadot
+        url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-polkadot
+
+  - title: docs
+    url: https://xchainjs.github.io
+
+  - title: get in touch
+    entries:
+      - title: telegram
+        url: https://t.me/xchainjs
