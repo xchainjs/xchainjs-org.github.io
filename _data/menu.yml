@@ -34,3 +34,5 @@ entries:
     entries:
       - title: telegram
         url: https://t.me/xchainjs
+      - title: twitter
+        url: https://twitter.com/xchainjs
