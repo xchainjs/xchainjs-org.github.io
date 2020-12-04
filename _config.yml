@@ -1,9 +1,10 @@
-title: "<img src='assets/img/logo.png' width='80px' height='80px'/>XChainJS"
+title: XChainJS
 author: Thorchain Community
 url: https://xchainjs.org
 lang: en
 description: XChainJS is a library with a common interface for multiple blockchains, built for simple and fast integration for wallets and more. 
 
+logo: "<img src='assets/img/logo.png' width='80px' height='80px'/>"
 favicon: "assets/img/logo.png"
 
 remote_theme: riggraz/no-style-please
