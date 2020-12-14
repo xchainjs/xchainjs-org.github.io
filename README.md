@@ -6,13 +6,12 @@ XChainJS is a library with a common interface for multiple blockchains, built fo
     
 - minimal features necessary to support wallets
 - optional client extension for more advanced features
-- built-in serve providers to get wallet balances and transactional history
+- built-in service providers to get balances and transactional history
 - built-in fee recommendations
-- [github repo](https://github.com/xchainjs/xchainjs-lib)
 
 ## the library
-- [crypto library](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-crypto)
-- [util library](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-util)
+- [crypto package](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-crypto)
+- [util package](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-util)
 - [chain clients](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-client)
 
 ## supported chains
@@ -21,6 +20,9 @@ XChainJS is a library with a common interface for multiple blockchains, built fo
 - [cosmos](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-cosmos)
 - [thorchain](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-thorchain)
 - [polkadot](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-polkadot)
+
+## source-code
+- [github repo](https://github.com/xchainjs/xchainjs-lib)
 
 ## docs
 
