@@ -1,7 +1,7 @@
 entries:
-  - title: a lightweight javascript wallet library for cross-chain projects
+  - title: features
     entries:
-      - title: minimal features necessary to support wallets
+      - title: minimal necessary to support wallets
       - title: optional client extension for more advanced features
       - title: built-in service providers to get balances and transactional history
       - title: built-in fee recommendations
