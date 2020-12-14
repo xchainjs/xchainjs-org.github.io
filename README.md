@@ -34,4 +34,4 @@ xchainjs is a library with a common interface for multiple blockchains, built fo
 
 ## License
 
-MIT [XChainJS](https://github.com/xchainjs)
+MIT [xchainjs](https://github.com/xchainjs)
