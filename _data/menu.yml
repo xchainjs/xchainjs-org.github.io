@@ -1,18 +1,16 @@
 entries:
-  - title: lightweight javascript wallet library for crosschain projects
+  - title: a lightweight javascript wallet library for cross-chain projects
     entries:
       - title: minimal features necessary to support wallets
       - title: optional client extension for more advanced features
-      - title: built-in serve providers to get wallet balances and transactional history
+      - title: built-in service providers to get balances and transactional history
       - title: built-in fee recommendations
-      - title: github repo
-        url: https://github.com/xchainjs/xchainjs-lib
 
   - title: the library
     entries:
-      - title: "crypto library <a href='https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-crypto'>create a BIP39 compatible keystore for all blockchains</a>"
-      - title: "util library <a href='https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-util'>access common utils</a>"
-      - title: "chain clients <a href='https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-client'>a single common interface for all blockchains</a>"
+      - title: "crypto package <a href='https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-crypto'>to create a cross-chain BIP39 keystore</a>"
+      - title: "util package <a href='https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-util'>to access common chain utils</a>"
+      - title: "chain clients <a href='https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-client'>with a single common interface</a>"
 
   - title: supported chains
     entries:
@@ -27,6 +25,9 @@ entries:
       - title: polkadot
         url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-polkadot
 
+- title: source-code
+        url: https://github.com/xchainjs/xchainjs-lib
+        
   - title: docs
     url: https://xchainjs.github.io
 
