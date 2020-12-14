@@ -26,7 +26,7 @@ xchainjs is a library with a common interface for multiple blockchains, built fo
 
 ## docs
 
-- [XChainJS Documentation](https://xchainjs.github.io)
+- [xchainjs Documentation](https://xchainjs.github.io)
 
 ## get in touch
 - [telegram](https://t.me/xchainjs)
