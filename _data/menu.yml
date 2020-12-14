@@ -25,9 +25,9 @@ entries:
       - title: polkadot
         url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-polkadot
 
-- title: source-code
-        url: https://github.com/xchainjs/xchainjs-lib
-        
+  - title: source-code
+    url: https://github.com/xchainjs/xchainjs-lib
+
   - title: docs
     url: https://xchainjs.github.io
 
