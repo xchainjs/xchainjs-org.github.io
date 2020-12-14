@@ -1,8 +1,8 @@
-title: XChainJS
-author: Thorchain Community
+title: xchainjs
+author: thorchain community
 url: https://xchainjs.org
 lang: en
-description: XChainJS is a library with a common interface for multiple blockchains, built for simple and fast integration for wallets and more. 
+description: xchainjs is a library with a common interface for multiple blockchains, built for simple and fast integration for wallets and more. 
 
 logo: "<img src='assets/img/logo.png' width='80px' height='80px'/>"
 favicon: "assets/img/logo.png"
