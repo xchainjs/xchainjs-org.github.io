@@ -24,10 +24,14 @@ entries:
         url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-ethereum
       - title: litecoin
         url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-litecoin
-      - title: polkadot
-        url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-polkadot
+      - title: bitcoincash
+        url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-bitcoincash
       - title: thorchain
         url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-thorchain
+      - title: doge
+        url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-doge
+      - title: terra
+        url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-terra
 
   - title: source-code
     url: https://github.com/xchainjs/xchainjs-lib
