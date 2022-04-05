@@ -20,10 +20,10 @@ xchainjs is a library with a common interface for multiple blockchains, built fo
 - [cosmos](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-cosmos)
 - [ethereum](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-ethereum)
 - [litecoin](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-litecoin)
-- [Bitcoincash](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-bitcoincash)
+- [bitcoincash](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-bitcoincash)
 - [thorchain](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-thorchain)
-- [Terra](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-terra)
-- [Doge](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-doge)
+- [terra](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-terra)
+- [doge](https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-doge)
 
 ## source-code
 - [github repo](https://github.com/xchainjs/xchainjs-lib)
