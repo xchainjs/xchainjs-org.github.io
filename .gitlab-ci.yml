@@ -1,12 +1,28 @@
 image: ruby:2.7
 
+cache:
+  paths:
+  - vendor/ # cache installation files for projects dependencies for faster building
+
+before_script:
+  - bundle install --path vendor
+
 pages:
+  stage: deploy
   script:
-    - gem install bundler
-    - bundle install
     - bundle exec jekyll build -d public
   artifacts:
     paths:
-      - public
+    - public
   only:
-    - master
+  - master
+
+test: # test build website
+  stage: test
+  script:
+  - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
