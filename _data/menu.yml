@@ -32,6 +32,8 @@ entries:
         url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-doge
       - title: terra
         url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-terra
+      - title: Avax
+        url: https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-terra
 
   - title: source-code
     url: https://github.com/xchainjs/xchainjs-lib
