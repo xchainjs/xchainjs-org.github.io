@@ -71,6 +71,8 @@ export default function Home () {
                   <p className='inline'>, </p>
                   <span className='inline-block'><TextLink text='ETHEREUM' url='https://ethereum.org/en/' underlined/></span>
                   <p className='inline'>, </p>
+                  <span className='inline-block'><TextLink text='ARBITRUM' url='https://arbitrum.io/' underlined/></span>
+                  <p className='inline'>, </p>
                   <span className='inline-block'><TextLink text='KUJIRA' url='https://kujira.network/' underlined/></span>
                   <p className='inline'>, </p>
                   <span className='inline-block'><TextLink text='LITECOIN' url='https://litecoin.org/' underlined/></span>
@@ -127,6 +129,8 @@ export default function Home () {
                 <span className='inline-block'><TextLink text='Blockchain.com' url='https://www.blockchain.com/en/' underlined/></span>
                 <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='Bscan' url='https://bscscan.com/' underlined/></span>
+                <p className='inline'>, </p>
+                <span className='inline-block'><TextLink text='Arbiscan' url='https://arbiscan.io/' underlined/></span>
                 <p className='inline'> and the rest of the crew.</p>
               </div>
             </Card>
