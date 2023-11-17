@@ -120,6 +120,8 @@ export default function Home () {
             <Card title='Block Explorers'>
               <div>
                 <p className='inline'>Stay updated with </p>
+                <span className='inline-block'> <TextLink text='Runescan' url='https://runescan.io/' underlined/></span>
+                <p className='inline'>, </p>
                 <span className='inline-block'> <TextLink text='Etherscan' url='https://etherscan.io/' underlined/></span>
                 <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='Snowtrace' url='https://snowtrace.io/' underlined/></span>
