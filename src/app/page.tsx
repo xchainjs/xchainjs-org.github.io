@@ -114,6 +114,8 @@ export default function Home () {
                 <span className='inline-block'><TextLink text='Alchemy' url='https://www.alchemy.com/' underlined/></span>
                 <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='Ark' url='https://ark.io/' underlined/></span>
+                <p className='inline'>, </p>
+                <span className='inline-block'><TextLink text='Routescan' url='https://routescan.io/documentation' underlined/></span>
                 <p className='inline'> and more!</p>
               </div>
             </Card>
@@ -124,7 +126,7 @@ export default function Home () {
                 <p className='inline'>, </p>
                 <span className='inline-block'> <TextLink text='Etherscan' url='https://etherscan.io/' underlined/></span>
                 <p className='inline'>, </p>
-                <span className='inline-block'><TextLink text='Snowtrace' url='https://snowtrace.io/' underlined/></span>
+                <span className='inline-block'><TextLink text='Snowtrace' url='https://snowtrace.dev/' underlined/></span>
                 <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='Blockchain.com' url='https://www.blockchain.com/en/' underlined/></span>
                 <p className='inline'>, </p>
