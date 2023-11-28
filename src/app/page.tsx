@@ -107,6 +107,8 @@ export default function Home () {
                 <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='Hashcoin' url='https://www.haskoin.com/' underlined/></span>
                 <p className='inline'>, </p>
+                <span className='inline-block'><TextLink text='Bitgo' url='https://www.bitgo.com/' underlined/></span>
+                <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='SoChain' url='https://sochain.com/' underlined/></span>
                 <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='Covalent' url='https://www.covalent.xyz/' underlined/></span>
