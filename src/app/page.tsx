@@ -143,6 +143,26 @@ export default function Home () {
           </div>
         </div>
       </section>
+      <section className='md:mb-20 mb-12 px-4 md:px-16 lg:px-64 flex flex-row justify-center'>
+        <div className='flex flex-col'>
+          <header className='flex flex-row justify-center'>
+            <Subtitle text='Roadmap' />
+          </header>
+          <div className='mt-3 md:mt-6'>
+            <ul className='list-disc list-inside'>
+              <li>
+                <strong>Xchainjs-aggregator:</strong> Enhancements to provide more robust cross-chain functionality and improved performance.
+              </li>
+              <li>
+                <strong>Ledger Support:</strong> Integration for secure hardware wallet transactions, enhancing user security.
+              </li>
+              <li>
+                <strong>Trezor Support:</strong> Implementing support for Trezor hardware wallets to diversify secure transaction options.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section className='md:mb-20 mb-14 px-4 md:px-16 lg:px-64'>
         <div className='flex flex-col items-center'>
           <header className='flex flex-row justify-center'>
