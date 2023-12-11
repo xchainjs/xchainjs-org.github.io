@@ -37,10 +37,11 @@ export default function Home () {
           <header className='flex flex-row justify-center'>
             <Subtitle text='Featured integrations' iconClass={IconClass.INVADER1}/>
           </header>
-          <div className='mt-6 md:mt-12 grid grid-cols-1 md:grid-cols-3 gap-x-10 lg:gap-x-20 gap-y-10 lg:gap-y-12'>
-            <IntegrationCard key='lends' iconClass={IconClass.LENDS} name='Lends' url='https://www.lends.so/' description="The fearless trailblazers in the world of loans. From bold ventures into lending territories to whipping up stellar features, they'are turning heads."/>
-            <IntegrationCard key='asgardex' iconClass={IconClass.ASGARDEX}name='Asgardex' url='https://github.com/asgardex/asgardex-desktop' description='The guardians of the desktop space. Their dedication to open-source and resisting censorship? Nothing short of legendary.'/>
-            <IntegrationCard key='swapper' iconClass={IconClass.SWAPPER} name='Swapper' url='https://swapper.market/' description='The heroes with dreams bigger than the cosmos. A simple UI and a vision to make your crypto journey seamless. Expect big things!'/>
+          <div className='mt-6 md:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 lg:gap-x-20 gap-y-10 lg:gap-y-12'>
+              <IntegrationCard key='lends' iconClass={IconClass.LENDS} name='Lends' url='https://www.lends.so/' description="The fearless trailblazers in the world of loans. From bold ventures into lending territories to whipping up stellar features, they'are turning heads."/>
+              <IntegrationCard key='asgardex' iconClass={IconClass.ASGARDEX}name='Asgardex' url='https://github.com/asgardex/asgardex-desktop' description='The guardians of the desktop space. Their dedication to open-source and resisting censorship? Nothing short of legendary.'/>
+              <IntegrationCard key='swapper' iconClass={IconClass.SWAPPER} name='Swapper' url='https://swapper.market/' description='The heroes with dreams bigger than the cosmos. A simple UI and a vision to make your crypto journey seamless. Expect big things!'/>
+              <IntegrationCard key='leapwallet' iconClass={IconClass.LEAP_WALLET} name='Leap Wallet' url='https://www.leapwallet.io/' description='Super Wallet for the Internet of Blockchains. Your gateway to 60+ Cosmos chains!'/>
           </div>
         </div>
       </section>
