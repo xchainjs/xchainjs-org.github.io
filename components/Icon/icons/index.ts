@@ -13,6 +13,7 @@ import { SwapperIcon } from './SwapperIcon'
 import { TelegramIcon } from './TelegramIcon'
 import { UfoIcon } from './UfoIcon'
 import { XIcon } from './XIcon'
+import { LeapWalletIcon } from './LeapWalletIcon'
 
 export {
   AsgardexIcon,
@@ -23,6 +24,7 @@ export {
   Invader1Icon,
   Invader2Icon,
   JellyfishIcon,
+  LeapWalletIcon,
   LendsIcon,
   LockIcon,
   SunIcon,

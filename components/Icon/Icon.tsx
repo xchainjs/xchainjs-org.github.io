@@ -7,6 +7,7 @@ import {
   Invader1Icon,
   Invader2Icon,
   JellyfishIcon,
+  LeapWalletIcon,
   LendsIcon,
   LockIcon,
   SunIcon,
@@ -25,6 +26,7 @@ export enum IconClass {
   INVADER1,
   INVADER2,
   JELLYFISH,
+  LEAP_WALLET,
   LENDS,
   LOCK,
   SUN,
@@ -49,6 +51,7 @@ export function Icon ({ iconClass, className }: Props) {
   if (iconClass === IconClass.INVADER2) return <Invader2Icon className={className}></Invader2Icon>
   if (iconClass === IconClass.JELLYFISH) return <JellyfishIcon className={className}></JellyfishIcon>
   if (iconClass === IconClass.LENDS) return <LendsIcon className={className}></LendsIcon>
+  if (iconClass === IconClass.LEAP_WALLET) return <LeapWalletIcon className={className}></LeapWalletIcon>
   if (iconClass === IconClass.LOCK) return <LockIcon className={className}></LockIcon>
   if (iconClass === IconClass.SUN) return <SunIcon className={className}></SunIcon>
   if (iconClass === IconClass.SWAPPER) return <SwapperIcon className={className}></SwapperIcon>
