@@ -83,10 +83,10 @@ export default function Home () {
                   <span className='inline-block'><TextLink text='THORCHAIN' url='https://thorchain.org/' underlined/></span>
                 </div>
                 <ul className='mt-6'>
-                  <li className='flex flex-wrap'><TextLink text='○ Signature and transmission of transactions' url='https://docs.xchainjs.org/xchain-client/overview.html#transfer'/></li>
-                  <li className='flex flex-wrap'><TextLink text='○ Balance inquiries' url='https://docs.xchainjs.org/xchain-client/overview.html#get-balance'/></li>
-                  <li className='flex flex-wrap'><TextLink text='○ Transaction history and details' url='https://docs.xchainjs.org/xchain-client/overview.html#get-transactions'/></li>
-                  <li className='flex flex-wrap'><TextLink text='○ Fee estimates' url='https://docs.xchainjs.org/xchain-client/overview.html#get-fees'/></li>
+                  <li className='flex flex-wrap'><TextLink text='○ Signature and transmission of transactions' url='https://xchainjs.gitbook.io/xchainjs/clients/xchain-cosmos-sdk/xchain-thorchain/how-to-use#transfer-rune-using-thor-client'/></li>
+                  <li className='flex flex-wrap'><TextLink text='○ Balance inquiries' url='https://xchainjs.gitbook.io/xchainjs/clients/xchain-binance/how-to-use#connect-wallet-to-new-binance-chain-client'/></li>
+                  <li className='flex flex-wrap'><TextLink text='○ Transaction history and details' url='https://xchainjs.gitbook.io/xchainjs/clients/xchain-evm/xchain-avax/how-to-use#get-transaction-data--history'/></li>
+                  <li className='flex flex-wrap'><TextLink text='○ Fee estimates' url='https://xchainjs.gitbook.io/xchainjs/clients/xchain-evm/xchain-avax/how-to-use#get-fees'/></li>
                 </ul>
               </div>
             </Card>
@@ -94,10 +94,10 @@ export default function Home () {
               <div className='flex flex-col'>
                 <p>Featuring THORChain now, with Maya on the horizon. Get ready for:</p>
                 <ul className='mt-6'>
-                  <li className='flex flex-wrap'><TextLink text='○ Multi-chain swaps, including BTC!' url='https://github.com/xchainjs/xchainjs-lib/tree/master/examples/do-swap'/></li>
-                  <li className='flex flex-wrap'><TextLink text='○ Native interest rates' url='https://github.com/xchainjs/xchainjs-lib/tree/master/examples/liquidity'/></li>
-                  <li className='flex flex-wrap'><TextLink text='○ Open loans without liquidation' url='https://github.com/xchainjs/xchainjs-lib/blob/master/examples/loans'/></li>
-                  <li className='flex flex-wrap'><TextLink text='○ Custom nameservice (THORname)' url='https://docs.xchainjs.org/xchain-thorchain-amm/available-functions/thorchain-amm.html#getthornamesbyaddress'/></li>
+                  <li className='flex flex-wrap'><TextLink text='○ Multi-chain swaps, including BTC!' url='https://xchainjs.gitbook.io/xchainjs/protocols/thorchain/xchain-thorchain-amm/make-swap-using-thorchain'/></li>
+                  <li className='flex flex-wrap'><TextLink text='○ Native interest rates' url='https://xchainjs.gitbook.io/xchainjs/protocols/thorchain/xchain-thorchain-amm/handle-liquidity-and-savers'/></li>
+                  <li className='flex flex-wrap'><TextLink text='○ Open loans without liquidation' url='https://xchainjs.gitbook.io/xchainjs/protocols/thorchain/xchain-thorchain-amm/open-and-close-loans'/></li>
+                  <li className='flex flex-wrap'><TextLink text='○ Custom nameservice (THORname)' url='https://docs.xchainjs.org/xchain-docs/xchain-thorchain-query/docs/classes/ThorchainQuery.html#getThornameDetails'/></li>
                 </ul>
               </div>
             </Card>
@@ -172,7 +172,7 @@ export default function Home () {
           <p className='text-center mt-3 md:mt-6'>Ideas brewing? Feature request or a new integration on your mind? Do you want to know more?</p>
           <div className='flex flex-row mt-3 md:mt-8 gap-x-5 md:gap-x-12'>
             <ButtonLink url='https://discord.com/channels/838986635756044328/915384547670102037' text='Contact'/>
-            <ButtonLink url='https://docs.xchainjs.org/' text='Documentation' style='secundary'/>
+            <ButtonLink url='https://xchainjs.gitbook.io/xchainjs' text='Documentation' style='secundary'/>
           </div>
         </div>
       </section>
