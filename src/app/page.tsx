@@ -8,7 +8,7 @@ export default function Home () {
           <header className='flex flex-row justify-center'>
             <Subtitle text='Hey there crypto explorer!' size='lg'/>
           </header>
-          <p className='text-center mt-3 md:mt-6 text-sm md:text-lg'>Say hello to XchainJS! We’ve got the toolkit that makes your cross-chain adventures feel like a walk in the park. Open-sourced, backed by the might of THORChain, and crafted with a sprinkle of love just for you.</p>
+          <p className='text-center mt-3 md:mt-6 text-sm md:text-lg'>Say hello to XchainJS! We’ve got the toolkit that makes your cross-chain adventures feel like a walk in the park. Open-sourced, backed by the might of THORChain & MAYAChain, and crafted with a sprinkle of love just for you.</p>
         </div>
       </section>
       <section className='md:mb-28 mb-14 px-4 md:px-16 lg:px-20'>
@@ -21,7 +21,7 @@ export default function Home () {
               <p>Let&apos;s keep things straight; we lock down your private keys like Fort Knox. Sleep tight, no worries here!</p>
             </Card>
             <Card title='Beyond the horizon' iconClass={IconClass.SUN}>
-              <p>It&apos;s not just about THORChain. Dive into our expansive arsenal of wallet tools waiting for your exploration.</p>
+              <p>It&apos;s not just about THORChain or MAYAChain. Dive into our expansive arsenal of wallet tools waiting for your exploration.</p>
             </Card>
             <Card title='No Geek Speak Needed' iconClass={IconClass.FLASK}>
               <p>Our comprehensive suite of wallet tools is designed for integration and ease of use.</p>
@@ -42,6 +42,7 @@ export default function Home () {
               <IntegrationCard key='asgardex' iconClass={IconClass.ASGARDEX}name='Asgardex' url='https://github.com/asgardex/asgardex-desktop' description='The guardians of the desktop space. Their dedication to open-source and resisting censorship? Nothing short of legendary.'/>
               <IntegrationCard key='swapper' iconClass={IconClass.SWAPPER} name='Swapper' url='https://swapper.market/' description='The heroes with dreams bigger than the cosmos. A simple UI and a vision to make your crypto journey seamless. Expect big things!'/>
               <IntegrationCard key='leapwallet' iconClass={IconClass.LEAP_WALLET} name='Leap Wallet' url='https://www.leapwallet.io/' description='Super Wallet for the Internet of Blockchains. Your gateway to 60+ Cosmos chains!'/>
+              <IntegrationCard key='CacaoSwap' iconClass={IconClass.CACAOSWAP} name='Cacao Swap' url='https://cacaoswap.app/' description='CacaoSwap is dedicated to streamlining the process of native swaps powered by Maya!'/>
           </div>
         </div>
       </section>
@@ -129,13 +130,17 @@ export default function Home () {
                 <p className='inline'>Stay updated with </p>
                 <span className='inline-block'> <TextLink text='Runescan' url='https://runescan.io/' underlined/></span>
                 <p className='inline'>, </p>
+                <span className='inline-block'> <TextLink text='Mayascan' url='https://mayascan.org/' underlined/></span>
+                <p className='inline'>, </p>
+                <span className='inline-block'> <TextLink text='BlockCypher' url='https://www.blockcypher.com' underlined/></span>
+                <p className='inline'>, </p>
                 <span className='inline-block'> <TextLink text='Etherscan' url='https://etherscan.io/' underlined/></span>
                 <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='Snowtrace' url='https://snowtrace.dev/' underlined/></span>
                 <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='Blockchain.com' url='https://www.blockchain.com/en/' underlined/></span>
                 <p className='inline'>, </p>
-                <span className='inline-block'><TextLink text='Bscan' url='https://bscscan.com/' underlined/></span>
+                <span className='inline-block'><TextLink text='Bscscan' url='https://bscscan.com/' underlined/></span>
                 <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='Arbiscan' url='https://arbiscan.io/' underlined/></span>
                 <p className='inline'> and the rest of the crew.</p>
@@ -151,11 +156,15 @@ export default function Home () {
           </header>
           <div className='mt-3 md:mt-6'>
             <ul className='list-disc list-inside'>
-              <li>
-                <strong>Xchainjs-aggregator:</strong> Enhancements to provide more robust cross-chain functionality and improved performance.
+              <li className="flex items-center">
+                <span className="text-green-500 text-xl">&#10003;</span>
+                <strong className="ml-2">Xchainjs-aggregator: </strong> Enhancements to provide more robust cross-chain functionality and improved performance.
               </li>
               <li>
                 <strong>Ledger Support:</strong> Integration for secure hardware wallet transactions, enhancing user security.
+              </li>
+              <li>
+                <strong>KeepKey Support:</strong> Integration for secure hardware wallet transactions, enhancing user security.
               </li>
               <li>
                 <strong>Trezor Support:</strong> Implementing support for Trezor hardware wallets to diversify secure transaction options.
