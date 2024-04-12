@@ -14,7 +14,7 @@ import { TelegramIcon } from './TelegramIcon'
 import { UfoIcon } from './UfoIcon'
 import { XIcon } from './XIcon'
 import { LeapWalletIcon } from './LeapWalletIcon'
-import { CacaoSwap } from './CacaoSwap'
+import { CacaoSwapIcon } from './CacaoSwapIcon'
 
 export {
   AsgardexIcon,
@@ -33,5 +33,5 @@ export {
   XIcon,
   UfoIcon,
   TelegramIcon,
-  CacaoSwap
+  CacaoSwapIcon
 }

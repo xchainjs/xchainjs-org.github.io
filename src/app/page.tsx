@@ -42,7 +42,7 @@ export default function Home () {
               <IntegrationCard key='asgardex' iconClass={IconClass.ASGARDEX}name='Asgardex' url='https://github.com/asgardex/asgardex-desktop' description='The guardians of the desktop space. Their dedication to open-source and resisting censorship? Nothing short of legendary.'/>
               <IntegrationCard key='swapper' iconClass={IconClass.SWAPPER} name='Swapper' url='https://swapper.market/' description='The heroes with dreams bigger than the cosmos. A simple UI and a vision to make your crypto journey seamless. Expect big things!'/>
               <IntegrationCard key='leapwallet' iconClass={IconClass.LEAP_WALLET} name='Leap Wallet' url='https://www.leapwallet.io/' description='Super Wallet for the Internet of Blockchains. Your gateway to 60+ Cosmos chains!'/>
-              <IntegrationCard key='CacaoSwap' iconClass={IconClass.CACAOSWAP} name='Cacao Swap' url='https://cacaoswap.app/' description='CacaoSwap is dedicated to streamlining the process of native swaps powered by Maya!'/>
+              <IntegrationCard key='CacaoSwap' iconClass={IconClass.CACAOSWAP} name='Cacao Swap' url='https://cacaoswap.app/' description='CacaoSwap app is the supercharged front end, pairing great UX/UI with truly decentralised swaps. Backed and powered by MAYAChain and THORChain and built for you'/>
           </div>
         </div>
       </section>

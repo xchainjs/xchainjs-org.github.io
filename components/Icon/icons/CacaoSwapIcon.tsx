@@ -2,10 +2,11 @@ interface Props {
   className?: string
 }
 
-export function CacaoSwap ({ className }: Props) {
+export function CacaoSwapIcon ({ className }: Props) {
   return (
-      <svg viewBox='0 0 263 263' fill="none" xmlns="http://www.w3.org/2000/svg" className={className} >
-          <circle cx="131.5" cy="131.5" r="131.5" fill="#252525" />
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 263 263' fill="currentcolor" className={className} >
+          <title>CacaoSwap</title>
+          <circle cx="131.5" cy="131.5" r="131.5" fill="currentcolor" />
           <g clipPath="url(#clip0_7150_45544)">
               <path d="M14.6133 55.289C72.5143 99.3348 191.298 99.3348 249.199 55.289V34.8344C191.298 93.5474 72.5143 93.5474 14.6133 34.8344C14.6133 41.6379 14.6133 48.4413 14.6133 55.289Z" fill="white" />
               <path d="M14.6133 98.5148C72.5143 116.893 191.298 116.893 249.199 98.5148V78.0602C191.298 111.061 72.5143 111.061 14.6133 78.0602C14.6133 84.8636 14.6133 91.6671 14.6133 98.5148Z" fill="white" />

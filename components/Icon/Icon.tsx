@@ -14,7 +14,7 @@ import {
   SwapperIcon,
   XIcon,
   TelegramIcon,
-  CacaoSwap
+  CacaoSwapIcon
 } from './icons'
 import { UfoIcon } from './icons/UfoIcon'
 
@@ -60,7 +60,7 @@ export function Icon ({ iconClass, className }: Props) {
   if (iconClass === IconClass.TELEGRAM) return <TelegramIcon className={className}></TelegramIcon>
   if (iconClass === IconClass.UFO) return <UfoIcon className={className}></UfoIcon>
   if (iconClass === IconClass.X) return <XIcon className={className}></XIcon>
-  if (iconClass === IconClass.CACAOSWAP) return <CacaoSwap className={className}></CacaoSwap>
+  if (iconClass === IconClass.CACAOSWAP) return <CacaoSwapIcon className={className}></CacaoSwapIcon>
 
   return <></>
 }
