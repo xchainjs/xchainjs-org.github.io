@@ -15,6 +15,7 @@ import { UfoIcon } from './UfoIcon'
 import { XIcon } from './XIcon'
 import { LeapWalletIcon } from './LeapWalletIcon'
 import { CacaoSwapIcon } from './CacaoSwapIcon'
+export { LeoDexIcon } from './LeoDexIcon'
 
 export {
   AsgardexIcon,

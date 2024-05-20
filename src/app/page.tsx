@@ -43,6 +43,7 @@ export default function Home () {
               <IntegrationCard key='swapper' iconClass={IconClass.SWAPPER} name='Swapper' url='https://swapper.market/' description='The heroes with dreams bigger than the cosmos. A simple UI and a vision to make your crypto journey seamless. Expect big things!'/>
               <IntegrationCard key='leapwallet' iconClass={IconClass.LEAP_WALLET} name='Leap Wallet' url='https://www.leapwallet.io/' description='Super Wallet for the Internet of Blockchains. Your gateway to 60+ Cosmos chains!'/>
               <IntegrationCard key='CacaoSwap' iconClass={IconClass.CACAOSWAP} name='Cacao Swap' url='https://cacaoswap.app/' description='CacaoSwap app is the supercharged front end, pairing great UX/UI with truly decentralised swaps. Backed and powered by MAYAChain and THORChain and built for you'/>
+              <IntegrationCard key='LeoDex' iconClass={IconClass.LEODEX} name='LeoDex' url='https://leodex.io/' description='Multi-chain DEX interface that bridges the gap of functionality and usability. Built by the LEO Ecosystem, powered by Maya Protocol and aggregating HIVE Swaps.'/>
           </div>
         </div>
       </section>

@@ -14,7 +14,8 @@ import {
   SwapperIcon,
   XIcon,
   TelegramIcon,
-  CacaoSwapIcon
+  CacaoSwapIcon,
+  LeoDexIcon
 } from './icons'
 import { UfoIcon } from './icons/UfoIcon'
 
@@ -35,7 +36,8 @@ export enum IconClass {
   TELEGRAM,
   UFO,
   X,
-  CACAOSWAP
+  CACAOSWAP,
+  LEODEX
 }
 
 interface Props {
@@ -61,6 +63,7 @@ export function Icon ({ iconClass, className }: Props) {
   if (iconClass === IconClass.UFO) return <UfoIcon className={className}></UfoIcon>
   if (iconClass === IconClass.X) return <XIcon className={className}></XIcon>
   if (iconClass === IconClass.CACAOSWAP) return <CacaoSwapIcon className={className}></CacaoSwapIcon>
+  if (iconClass === IconClass.LEODEX) return <LeoDexIcon className={className}></LeoDexIcon>
 
   return <></>
 }
