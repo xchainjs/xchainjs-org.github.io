@@ -81,8 +81,10 @@ export default function Home () {
                   <span className='inline-block'><TextLink text='LITECOIN' url='https://litecoin.org/' underlined/></span>
                   <p className='inline'>, </p>
                   <span className='inline-block'><TextLink text='MAYACHAIN' url='https://www.mayaprotocol.com/' underlined/></span>
-                  <p className='inline'> and </p>
+                  <p className='inline'>, </p>
                   <span className='inline-block'><TextLink text='THORCHAIN' url='https://thorchain.org/' underlined/></span>
+                  <p className='inline'> and </p>
+                  <span className='inline-block'><TextLink text='RADIX' url='https://www.radixdlt.com/' underlined/></span>
                 </div>
                 <ul className='mt-6'>
                   <li className='flex flex-wrap'><TextLink text='○ Signature and transmission of transactions' url='https://xchainjs.gitbook.io/xchainjs/clients/xchain-cosmos-sdk/xchain-thorchain/how-to-use#transfer-rune-using-thor-client'/></li>
@@ -100,6 +102,25 @@ export default function Home () {
                   <li className='flex flex-wrap'><TextLink text='○ Native interest rates' url='https://xchainjs.gitbook.io/xchainjs/protocols/thorchain/xchain-thorchain-amm/handle-liquidity-and-savers'/></li>
                   <li className='flex flex-wrap'><TextLink text='○ Open loans without liquidation' url='https://xchainjs.gitbook.io/xchainjs/protocols/thorchain/xchain-thorchain-amm/open-and-close-loans'/></li>
                   <li className='flex flex-wrap'><TextLink text='○ Custom nameservice (THORname)' url='https://docs.xchainjs.org/xchain-docs/xchain-thorchain-query/docs/classes/ThorchainQuery.html#getThornameDetails'/></li>
+                </ul>
+              </div>
+            </Card>
+            <Card title='Wallet'>
+              <div>
+                <p className='inline'>Use the </p>
+                <span className='inline-block'><TextLink text='Wallet interface' url='https://xchainjs.gitbook.io/xchainjs/wallet' underlined/></span>
+                <p className='inline'> to add multiple clients to your DApps with confidence. Work with them without worrying about their inline implementation. Integrate keystore clients and </p>
+                <span className='inline-block'><TextLink text='Ledger' url='https://www.ledger.com/' underlined/></span>
+                <p className='inline'> clients with ease.</p>
+              </div>
+            </Card>
+            <Card title='Aggregator'>
+              <div>
+                <p>Work with different protocols at the same time and get ready to give to your DApp the potential it deserves from:</p>
+                <ul className='mt-6'>
+                  <li className='flex flex-wrap'><TextLink text='○ Thorchain' url='https://thorchain.org/'/></li>
+                  <li className='flex flex-wrap'><TextLink text='○ Mayachain' url='https://www.mayaprotocol.com/'/></li>
+                  <li className='flex flex-wrap'><TextLink text='○ Chainflip' url='https://chainflip.io/'/></li>
                 </ul>
               </div>
             </Card>
@@ -144,6 +165,8 @@ export default function Home () {
                 <span className='inline-block'><TextLink text='Bscscan' url='https://bscscan.com/' underlined/></span>
                 <p className='inline'>, </p>
                 <span className='inline-block'><TextLink text='Arbiscan' url='https://arbiscan.io/' underlined/></span>
+                <p className='inline'>, </p>
+                <span className='inline-block'><TextLink text='Radix' url='https://dashboard.radixdlt.com/' underlined/></span>
                 <p className='inline'> and the rest of the crew.</p>
               </div>
             </Card>
@@ -156,14 +179,19 @@ export default function Home () {
             <Subtitle text='Roadmap' />
           </header>
           <div className='mt-3 md:mt-6'>
-            <ul className='list-disc list-inside'>
-              <li className="flex items-center">
-                <span className="text-green-500 text-xl">&#10003;</span>
-                <strong className="ml-2">Xchainjs-aggregator: </strong> Enhancements to provide more robust cross-chain functionality and improved performance.
-              </li>
+            <ul>
               <li>
-                <strong>Ledger Support:</strong> Integration for secure hardware wallet transactions, enhancing user security.
+                <span className="text-xl">&#10003;</span>
+                <strong className="ml-[12px]">Aggregator: </strong> Enhancements to provide more robust cross-chain functionality and improved performance among different protocols.
               </li>
+            </ul>
+            <ul>
+              <li>
+                <span className="text-xl rotate-45">&#8634;</span>
+                <strong className="ml-[12px]">Ledger Support:</strong> Integration for secure hardware wallet transactions, enhancing user security.
+              </li>
+            </ul>
+            <ul className='list-disc list-inside'>
               <li>
                 <strong>KeepKey Support:</strong> Integration for secure hardware wallet transactions, enhancing user security.
               </li>
