@@ -1,4 +1,6 @@
-import { Card, IntegrationCard, Subtitle, ButtonLink, TextLink, IconClass } from '@components'
+import { Card, Subtitle, ButtonLink, TextLink, IconClass } from '@components'
+import XChainArmy from './sections/XChainArmy'
+import Contributors from './sections/Contributors'
 
 export default function Home () {
   return (
@@ -32,21 +34,8 @@ export default function Home () {
           </div>
         </div>
       </section>
-      <section className='md:mb-28 mb-14 px-8 md:px-16 lg:px-20'>
-        <div className='flex flex-col'>
-          <header className='flex flex-row justify-center'>
-            <Subtitle text='Featured integrations' iconClass={IconClass.INVADER1}/>
-          </header>
-          <div className='mt-6 md:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 lg:gap-x-20 gap-y-10 lg:gap-y-12'>
-              <IntegrationCard key='lends' iconClass={IconClass.LENDS} name='Lends' url='https://www.lends.so/' description="The fearless trailblazers in the world of loans. From bold ventures into lending territories to whipping up stellar features, they'are turning heads."/>
-              <IntegrationCard key='asgardex' iconClass={IconClass.ASGARDEX}name='Asgardex' url='https://github.com/asgardex/asgardex-desktop' description='The guardians of the desktop space. Their dedication to open-source and resisting censorship? Nothing short of legendary.'/>
-              <IntegrationCard key='swapper' iconClass={IconClass.SWAPPER} name='Swapper' url='https://swapper.market/' description='The heroes with dreams bigger than the cosmos. A simple UI and a vision to make your crypto journey seamless. Expect big things!'/>
-              <IntegrationCard key='leapwallet' iconClass={IconClass.LEAP_WALLET} name='Leap Wallet' url='https://www.leapwallet.io/' description='Super Wallet for the Internet of Blockchains. Your gateway to 60+ Cosmos chains!'/>
-              <IntegrationCard key='CacaoSwap' iconClass={IconClass.CACAOSWAP} name='Cacao Swap' url='https://cacaoswap.app/' description='CacaoSwap app is the supercharged front end, pairing great UX/UI with truly decentralised swaps. Backed and powered by MAYAChain and THORChain and built for you'/>
-              <IntegrationCard key='LeoDex' iconClass={IconClass.LEODEX} name='LeoDex' url='https://leodex.io/' description='Multi-chain DEX interface that bridges the gap of functionality and usability. Built by the LEO Ecosystem, powered by Maya Protocol and aggregating HIVE Swaps.'/>
-          </div>
-        </div>
-      </section>
+      <XChainArmy />
+      <Contributors />
       <section className='md:mb-28 mb-14 px-4 md:px-16 lg:px-36'>
         <div className='flex flex-col'>
           <header className='flex flex-row justify-center'>
