@@ -14,7 +14,10 @@ const config: Config = {
           DEFAULT: '#252525',
           light: '#4F4F4F',
           lighter: '#686868'
-        }
+        },
+        basic: '#252525',
+        growth: '#51A991',
+        enterprise: '#1BE7B0'
       },
       borderColor: {
         primary: {
