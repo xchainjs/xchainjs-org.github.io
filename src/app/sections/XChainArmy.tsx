@@ -31,7 +31,8 @@ const XChainArmy = () => {
                 "Empower your project with essential support – perfect for POCs and sponsored initiatives.",
               features: ["Private Telegram group"],
               icon: IconClass.INVADER2,
-              color: "#000000",
+              color: "text-basic",
+              border: "#252525",
             },
             {
               title: "Growth Plan",
@@ -43,7 +44,8 @@ const XChainArmy = () => {
                 "Visibility on the XchainJS website",
               ],
               icon: IconClass.INVADER3,
-              color: "#51A991",
+              color: "text-growth",
+              border: "#51A991",
             },
             {
               title: "Enterprise Plan",
@@ -56,25 +58,27 @@ const XChainArmy = () => {
                 "Prioritization of features in the XchainJS roadmap",
               ],
               icon: IconClass.INVADER4,
-              color: "#1BE7B0",
+              color: "text-enterprise",
+              border: "#1BE7B0",
             },
-          ].map(({ title, description, features, icon, color }) => (
+          ].map(({ title, description, features, icon, color, border }) => (
             <Card
               title={title}
               key={title}
               iconClass={icon}
               titleClasses="text-2xl"
-              wrapperStyle={{ borderColor: color, padding: "20px 20px 30px" }}
+              wrapperStyle={{
+                borderColor: border,
+                padding: "20px 20px 30px",
+              }}
             >
               <div className="pt-4">
-                <p className="my-10">{description}</p>
+                <p className="my-8">{description}</p>
                 <div style={{ marginTop: "40px" }}>
                   {features?.map((d, i) => (
                     <div className="mt-4 flex" key={i}>
-                      <span style={{ color: color }} className="text-2xl">
-                        ✔
-                      </span>
-                      <p style={{ marginLeft: "5px" }}>{d}</p>
+                      <span className={`text-2xl ${color}`}>✔</span>
+                      <p className="ml-2">{d}</p>
                     </div>
                   ))}
                 </div>

@@ -9,7 +9,7 @@ const arcadeClassic = localFont({
 
 const Contributors = () => {
   return (
-    <section className="md:mb-28 mb-14 px-8 md:px-16 lg:px-20">
+    <section className="md:mb-28 mb-14 px-8 md:px-16 lg:px-20 mt-10 lg:mt-0">
       <div className="flex flex-col">
         <header className="flex flex-row justify-center">
           <Subtitle text="CONTRIBUTORS" iconClass={IconClass.INVADER2} />
@@ -17,9 +17,8 @@ const Contributors = () => {
         {[
           {
             title: "Enterprise",
-            color: "#1BE7B0",
+            color: "text-enterprise",
             width: "400px",
-            colorClass: "text-green-400",
             items: [
               {
                 title: "THORCHAIN",
@@ -37,9 +36,8 @@ const Contributors = () => {
           },
           {
             title: "GROWTH",
-            color: "#51A991",
+            color: "text-growth",
             width: "400px",
-            colorClass: "text-green-700",
             items: [
               {
                 title: "ASGARDEX",
@@ -52,9 +50,8 @@ const Contributors = () => {
           },
           {
             title: "Basic",
-            color: "#000000",
-            width: "320px",
-            colorClass: "text-gray-600",
+            color: "text-basic",
+            width: "400px",
             items: [
               {
                 title: "Lends",
@@ -86,17 +83,17 @@ const Contributors = () => {
               },
             ],
           },
-        ].map(({ title, color, items, width, colorClass }) => (
+        ].map(({ title, color, items, width }) => (
           <div key={title}>
             <h2
-              className={`${arcadeClassic.className} text-center text-2xl`}
-              style={{ color: color, margin: "100px auto" }}
+              className={`${arcadeClassic.className} text-center ${color} text-2xl`}
+              style={{ margin: "100px auto" }}
             >
               {title}
             </h2>
             <div
-              className="mt-6 md:mt-12 flex flex-row xs:flex-wrap lg:flex-nowrap justify-center"
-              style={{ gap: "40px" }}
+              className="mt-6 md:mt-12 flex flex-row flex-wrap lg:flex-nowrap justify-center"
+              style={{ gap: "50px" }}
             >
               {items.map(({ title, description, icon }) => (
                 <IntegrationCard
@@ -105,9 +102,8 @@ const Contributors = () => {
                   description={description}
                   iconClass={icon}
                   name={title}
-                  iconHoverColor={colorClass}
                   styles={{
-                    width: `min(90vw,${width})`,
+                    width: `min(86vw,${width})`,
                   }}
                 />
               ))}

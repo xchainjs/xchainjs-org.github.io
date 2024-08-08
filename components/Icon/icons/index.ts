@@ -18,8 +18,8 @@ import { XIcon } from "./XIcon";
 import { LeapWalletIcon } from "./LeapWalletIcon";
 import { CacaoSwapIcon } from "./CacaoSwapIcon";
 export { LeoDexIcon } from "./LeoDexIcon";
-import { ThorchainIcon } from "./ThorchainIcon";
 import { MayachainIcon } from "./MayachainIcon";
+import { ThorchainIcon } from "./ThorchainIcon";
 
 export {
   AsgardexIcon,
