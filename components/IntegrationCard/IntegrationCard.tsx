@@ -6,14 +6,22 @@ interface Props {
   name: string
   description: string
   url: string
+  styles?: object
+  iconHoverColor?: string
 }
 
-export function IntegrationCard ({ name, iconClass, url, description }: Props) {
+export function IntegrationCard ({
+  name,
+  iconClass,
+  url,
+  description,
+  iconHoverColor
+}: Props) {
   return (
-    <div>
-      <header className='flex flex-col'>
-        <div className='flex flex-row justify-center'>
-          <IconLink iconClass={iconClass} url={url}/>
+    <div className='w-full'>
+      <header className="flex flex-col">
+        <div className="flex flex-row justify-center">
+          <IconLink iconClass={iconClass} iconHoverColor={iconHoverColor} url={url} />
         </div>
         <div className='flex flex-row justify-center mt-3'>
           <p className='font-bold text-lg md:text-2xl'>{name.toUpperCase()}</p>
