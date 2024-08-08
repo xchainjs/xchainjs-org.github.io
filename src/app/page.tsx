@@ -1,6 +1,7 @@
 import { Card, Subtitle, ButtonLink, TextLink, IconClass } from '@components'
 import XChainArmy from './sections/XChainArmy'
 import Contributors from './sections/Contributors'
+import Crisp from '../../components/Crisp'
 
 export default function Home () {
   return (
@@ -203,6 +204,7 @@ export default function Home () {
           </div>
         </div>
       </section>
+      <Crisp />
     </main>
   )
 }

@@ -1,7 +1,7 @@
-import React from "react";
-import { Subtitle } from "../../../components/Subtitle";
-import { IconClass } from "../../../components/Icon";
-import { Card } from "../../../components/Card";
+import React from 'react'
+import { Subtitle } from '../../../components/Subtitle'
+import { IconClass } from '../../../components/Icon'
+import { Card } from '../../../components/Card'
 
 const XChainArmy = () => {
   return (
@@ -14,7 +14,7 @@ const XChainArmy = () => {
             iconClass={IconClass.INVADER1}
           />
         </header>
-        <p className="text-center" style={{ margin: "40px 0 20px" }}>
+        <p className="text-center" style={{ margin: '40px 0 20px' }}>
           Welcome to the Xchain Army, a community dedicated to the growth and
           support of XchainJS, an invaluable open-source library. Developing and
           maintaining such a robust tool requires significant effort and
@@ -26,41 +26,39 @@ const XChainArmy = () => {
         <div className="mt-6 md:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 lg:gap-x-20 gap-y-10 lg:gap-y-12">
           {[
             {
-              title: "Basic Plan",
+              title: 'Basic Plan',
               description:
-                "Empower your project with essential support – perfect for POCs and sponsored initiatives.",
-              features: ["Private Telegram group"],
+                'Empower your project with essential support – perfect for POCs and sponsored initiatives.',
+              features: ['Private Telegram group'],
               icon: IconClass.INVADER2,
-              color: "text-basic",
-              border: "#252525",
+              color: 'text-basic',
+              border: '#252525'
             },
             {
-              title: "Growth Plan",
+              title: 'Growth Plan',
               description:
-                "Stay ahead with seamless updates and enhanced support for your production-ready interfaces.",
+                'Stay ahead with seamless updates and enhanced support for your production-ready interfaces.',
               features: [
-                "Private Telegram group",
-                "Implementation of updates directly on the project's codebase",
-                "Visibility on the XchainJS website",
+                'Private Telegram group',
+                "Implementation of updates directly on the project's codebase"
               ],
               icon: IconClass.INVADER3,
-              color: "text-growth",
-              border: "#51A991",
+              color: 'text-growth',
+              border: '#51A991'
             },
             {
-              title: "Enterprise Plan",
+              title: 'Enterprise Plan',
               description:
-                "Lead the future of XchainJS with priority features and strategic influence.",
+                'Lead the future of XchainJS with priority features and strategic influence.',
               features: [
-                "Private Telegram group",
+                'Private Telegram group',
                 "Implementation of updates directly on the project's codebase",
-                "Visibility on the XchainJS website",
-                "Prioritization of features in the XchainJS roadmap",
+                'Prioritization of features in the XchainJS roadmap'
               ],
               icon: IconClass.INVADER4,
-              color: "text-enterprise",
-              border: "#1BE7B0",
-            },
+              color: 'text-enterprise',
+              border: '#1BE7B0'
+            }
           ].map(({ title, description, features, icon, color, border }) => (
             <Card
               title={title}
@@ -69,12 +67,12 @@ const XChainArmy = () => {
               titleClasses="text-2xl"
               wrapperStyle={{
                 borderColor: border,
-                padding: "20px 20px 30px",
+                padding: '20px 20px 30px'
               }}
             >
               <div className="pt-4">
                 <p className="my-8">{description}</p>
-                <div style={{ marginTop: "40px" }}>
+                <div style={{ marginTop: '40px' }}>
                   {features?.map((d, i) => (
                     <div className="mt-4 flex" key={i}>
                       <span className={`text-2xl ${color}`}>✔</span>
@@ -88,7 +86,7 @@ const XChainArmy = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default XChainArmy;
+export default XChainArmy

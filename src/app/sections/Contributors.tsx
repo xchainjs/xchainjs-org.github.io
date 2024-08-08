@@ -1,11 +1,10 @@
-import React from "react";
-import { Subtitle } from "../../../components/Subtitle";
-import { IconClass } from "../../../components/Icon";
-import { IntegrationCard } from "../../../components/IntegrationCard";
-import localFont from "next/font/local";
+import { Subtitle } from '../../../components/Subtitle'
+import { IconClass } from '../../../components/Icon'
+import { IntegrationCard } from '../../../components/IntegrationCard'
+import localFont from 'next/font/local'
 const arcadeClassic = localFont({
-  src: "../../../fonts/arcadeclassic/arcadeclassic.woff2",
-});
+  src: '../../../fonts/arcadeclassic/arcadeclassic.woff2'
+})
 
 const Contributors = () => {
   return (
@@ -16,95 +15,102 @@ const Contributors = () => {
         </header>
         {[
           {
-            title: "Enterprise",
-            color: "text-enterprise",
-            width: "400px",
+            title: 'Enterprise',
+            color: 'text-enterprise',
+            width: '400px',
             items: [
               {
-                title: "THORCHAIN",
+                title: 'THORCHAIN',
                 icon: IconClass.THORCHAIN,
+                url: 'https://thorchain.org/',
+                iconHoverColor: 'text-enterprise',
                 description:
-                  "The guardians of the desktop space. Their dedication to open-source and resisting censorship? Nothing short of legendary.",
+                  ''
               },
               {
-                title: "MAYACHAIN",
+                title: 'MAYACHAIN',
                 icon: IconClass.MAYACHAIN,
+                url: 'https://www.mayaprotocol.com/',
+                iconHoverColor: 'text-enterprise',
                 description:
-                  "The guardians of the desktop space. Their dedication to open-source and resisting censorship? Nothing short of legendary.",
-              },
-            ],
+                  ''
+              }
+            ]
           },
           {
-            title: "GROWTH",
-            color: "text-growth",
-            width: "400px",
+            title: 'GROWTH',
+            color: 'text-growth',
+            width: '400px',
             items: [
               {
-                title: "ASGARDEX",
+                title: 'ASGARDEX',
                 icon: IconClass.ASGARDEX,
-                url: "https://github.com/asgardex/asgardex-desktop",
+                url: 'https://www.asgardex.com/',
+                iconHoverColor: 'text-growth',
                 description:
-                  "The guardians of the desktop space. Their dedication to open-source and resisting censorship? Nothing short of legendary.",
-              },
-            ],
+                  'The guardians of the desktop space. Their dedication to open-source and resisting censorship? Nothing short of legendary.'
+              }
+            ]
           },
           {
-            title: "Basic",
-            color: "text-basic",
-            width: "400px",
+            title: 'Basic',
+            color: 'text-basic',
+            width: '400px',
             items: [
               {
-                title: "Lends",
+                title: 'Lends',
                 icon: IconClass.LENDS,
-                url: "https://www.lends.so/",
+                url: 'https://www.lends.so/',
+                iconHoverColor: 'text-primary-light',
                 description:
-                  "The fearless trailblazers in the world of loans. From bold ventures into lending territories to whipping up stellar features, they'are turning heads.",
+                  "The fearless trailblazers in the world of loans. From bold ventures into lending territories to whipping up stellar features, they'are turning heads."
               },
               {
-                title: "CACAO SWAP",
+                title: 'CACAO SWAP',
                 icon: IconClass.CACAOSWAP,
-                url: "https://cacaoswap.app/",
+                url: 'https://cacaoswap.app/',
+                iconHoverColor: 'text-primary-light',
                 description:
-                  "CacaoSwap app is the supercharged front end, pairing great UX/UI with truly decentralised swaps. Backed and powered by MAYAChain and THORChain and built for you",
+                  'CacaoSwap app is the supercharged front end, pairing great UX/UI with truly decentralised swaps. Backed and powered by MAYAChain and THORChain and built for you'
               },
               {
-                title: "LEAP WALLET",
+                title: 'LEAP WALLET',
                 icon: IconClass.LEAP_WALLET,
-                url: "https://www.leapwallet.io/",
+                url: 'https://www.leapwallet.io/',
+                iconHoverColor: 'text-primary-light',
                 description:
-                  "Super Wallet for the Internet of Blockchains. Your gateway to 60+ Cosmos chains!",
+                  'Super Wallet for the Internet of Blockchains. Your gateway to 60+ Cosmos chains!'
               },
               {
-                title: "LEODEX",
+                title: 'LEODEX',
                 icon: IconClass.LEODEX,
-                url: "https://leodex.io/",
+                url: 'https://leodex.io/',
+                iconHoverColor: 'text-primary-light',
                 description:
-                  "Multi-chain DEX interface that bridges the gap of functionality and usability. Built by the LEO Ecosystem, powered by Maya Protocol and aggregating HIVE Swaps.",
-              },
-            ],
-          },
-        ].map(({ title, color, items, width }) => (
+                  'Multi-chain DEX interface that bridges the gap of functionality and usability. Built by the LEO Ecosystem, powered by Maya Protocol and aggregating HIVE Swaps.'
+              }
+            ]
+          }
+        ].map(({ title, color, items }) => (
           <div key={title}>
             <h2
               className={`${arcadeClassic.className} text-center ${color} text-2xl`}
-              style={{ margin: "100px auto" }}
+              style={{ margin: '100px auto' }}
             >
               {title}
             </h2>
             <div
               className="mt-6 md:mt-12 flex flex-row flex-wrap lg:flex-nowrap justify-center"
-              style={{ gap: "50px" }}
+              style={{ gap: '50px' }}
             >
-              {items.map(({ title, description, icon }) => (
+              {items.map(({ title, description, icon, url, iconHoverColor }) => (
                 <IntegrationCard
-                  url="#"
+                  url={url}
                   key={title}
                   description={description}
                   iconClass={icon}
                   name={title}
-                  styles={{
-                    width: `min(86vw,${width})`,
-                  }}
+                  iconHoverColor={iconHoverColor}
                 />
               ))}
             </div>
@@ -112,7 +118,7 @@ const Contributors = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Contributors;
+export default Contributors

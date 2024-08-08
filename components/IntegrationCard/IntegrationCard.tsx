@@ -2,24 +2,23 @@ import { IconLink } from '../Link'
 import { type IconClass } from '../Icon'
 
 interface Props {
-  iconClass: IconClass;
-  name: string;
-  description: string;
-  url: string;
-  styles?: object;
-  iconHoverColor?: string;
+  iconClass: IconClass
+  name: string
+  description: string
+  url: string
+  styles?: object
+  iconHoverColor?: string
 }
 
-export function IntegrationCard({
+export function IntegrationCard ({
   name,
   iconClass,
   url,
   description,
-  styles = {},
   iconHoverColor
 }: Props) {
   return (
-    <div style={styles}>
+    <div className='w-full'>
       <header className="flex flex-col">
         <div className="flex flex-row justify-center">
           <IconLink iconClass={iconClass} iconHoverColor={iconHoverColor} url={url} />

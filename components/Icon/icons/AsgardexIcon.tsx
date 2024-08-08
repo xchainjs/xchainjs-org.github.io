@@ -7,8 +7,8 @@ export function AsgardexIcon({ className }: Props) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 511.46 511.78"
-      className={`hover:text-growth ${className}`}
-      fill="currentcolor"
+      className={`${className} hover:text-growth`}
+      fill={'currentColor'}
     >
       <title>Asgardex</title>
       <path
@@ -16,5 +16,5 @@ export function AsgardexIcon({ className }: Props) {
         transform="translate(-52.7 -165.35)"
       />
     </svg>
-  );
+  )
 }
