@@ -1,7 +1,7 @@
 import { Card, Subtitle, ButtonLink, TextLink, IconClass } from '@components'
-import XChainArmy from './sections/XChainArmy'
-import Contributors from './sections/Contributors'
 import Crisp from '../../components/Crisp'
+import XChainArmy from '../../components/sections/XChainArmy'
+import Contributors from '../../components/sections/Contributors'
 
 export default function Home () {
   return (

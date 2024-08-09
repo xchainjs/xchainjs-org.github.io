@@ -1,7 +1,6 @@
-import React from 'react'
-import { Subtitle } from '../../../components/Subtitle'
-import { IconClass } from '../../../components/Icon'
-import { Card } from '../../../components/Card'
+import { Subtitle } from '../Subtitle'
+import { IconClass } from '../Icon'
+import { Card } from '../Card'
 
 const XChainArmy = () => {
   return (

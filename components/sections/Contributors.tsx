@@ -1,9 +1,9 @@
-import { Subtitle } from '../../../components/Subtitle'
-import { IconClass } from '../../../components/Icon'
-import { IntegrationCard } from '../../../components/IntegrationCard'
+import { Subtitle } from '../Subtitle'
+import { IconClass } from '../Icon'
+import { IntegrationCard } from '../IntegrationCard'
 import localFont from 'next/font/local'
 const arcadeClassic = localFont({
-  src: '../../../fonts/arcadeclassic/arcadeclassic.woff2'
+  src: '../../fonts/arcadeclassic/arcadeclassic.woff2'
 })
 
 const Contributors = () => {
