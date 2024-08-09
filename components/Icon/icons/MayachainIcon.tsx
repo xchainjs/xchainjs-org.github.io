@@ -1,8 +1,8 @@
 interface Props {
-  className?: string;
+  className?: string
 }
 
-export function MayachainIcon({ className }: Props) {
+export function MayachainIcon ({ className }: Props) {
   return (
     <svg
       width="90"
@@ -56,5 +56,5 @@ export function MayachainIcon({ className }: Props) {
         />
       </g>
     </svg>
-  );
+  )
 }
