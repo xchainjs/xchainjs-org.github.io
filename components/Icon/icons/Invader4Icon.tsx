@@ -1,8 +1,8 @@
 interface Props {
-  className?: string;
+  className?: string
 }
 
-export function Invader4Icon({ className }: Props) {
+export function Invader4Icon ({ className }: Props) {
   return (
     <svg
       className={className}
@@ -17,5 +17,5 @@ export function Invader4Icon({ className }: Props) {
         fill="#1BE7B0"
       />
     </svg>
-  );
+  )
 }

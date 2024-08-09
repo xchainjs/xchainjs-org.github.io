@@ -3,7 +3,7 @@ interface Props {
   color?: string
 }
 
-export function ThorchainIcon({ className, color }: Props) {
+export function ThorchainIcon ({ className, color }: Props) {
   return (
     <svg
       width="91"
@@ -57,5 +57,5 @@ export function ThorchainIcon({ className, color }: Props) {
         />
       </g>
     </svg>
-  );
+  )
 }

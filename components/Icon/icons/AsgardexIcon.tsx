@@ -1,8 +1,8 @@
 interface Props {
-  className?: string;
+  className?: string
 }
 
-export function AsgardexIcon({ className }: Props) {
+export function AsgardexIcon ({ className }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
