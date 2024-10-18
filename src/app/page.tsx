@@ -199,7 +199,7 @@ export default function Home () {
           </header>
           <p className='text-center mt-3 md:mt-6'>Ideas brewing? Feature request or a new integration on your mind? Do you want to know more?</p>
           <div className='flex flex-row mt-3 md:mt-8 gap-x-5 md:gap-x-12'>
-            <ButtonLink url='https://discord.com/channels/838986635756044328/915384547670102037' text='Contact'/>
+            <ButtonLink url='https://discord.com/invite/7RRmc35UEG' text='Contact'/>
             <ButtonLink url='https://xchainjs.gitbook.io/xchainjs' text='Documentation' style='secundary'/>
           </div>
         </div>
