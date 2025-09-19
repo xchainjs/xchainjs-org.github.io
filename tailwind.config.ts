@@ -126,7 +126,7 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-mesh': 'linear-gradient(135deg, #0d87ff 0%, #10b981 100%)',
-        'hero-pattern': 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%230d87ff" fill-opacity="0.1"%3E%3Ccircle cx="7" cy="7" r="7"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+        'hero-pattern': 'radial-gradient(circle at 1px 1px, rgba(13, 135, 255, 0.1) 1px, transparent 0)',
       },
       boxShadow: {
         'glow-blue': '0 0 20px rgba(13, 135, 255, 0.3)',
