@@ -269,7 +269,7 @@ Object.keys(allBalances).forEach((chain) => {
 
   const simulateRun = () => {
     setIsRunning(true)
-    setTimeout(() => setIsRunning(false), 2000)
+    setTimeout(() => { setIsRunning(false) }, 2000)
   }
 
   return (
@@ -289,7 +289,7 @@ Object.keys(allBalances).forEach((chain) => {
         {examples.map((example) => (
           <button
             key={example.id}
-            onClick={() => setActiveExample(example.id)}
+            onClick={() => { setActiveExample(example.id) }}
             className={`p-4 rounded-lg border-2 transition-all duration-300 text-left ${
               activeExample === example.id
                 ? 'border-chain-blue-500 bg-chain-blue-50 shadow-glow-blue'
@@ -299,9 +299,11 @@ Object.keys(allBalances).forEach((chain) => {
             <div className="flex items-center justify-between mb-2">
               <h3 className="font-semibold text-primary">{example.title}</h3>
               <span className={`px-2 py-1 text-xs rounded-full font-medium ${
-                example.difficulty === 'Beginner' ? 'bg-electric-green-100 text-electric-green-800' :
-                example.difficulty === 'Intermediate' ? 'bg-yellow-100 text-yellow-800' :
-                'bg-red-100 text-red-800'
+                example.difficulty === 'Beginner'
+? 'bg-electric-green-100 text-electric-green-800'
+                : example.difficulty === 'Intermediate'
+? 'bg-yellow-100 text-yellow-800'
+                : 'bg-red-100 text-red-800'
               }`}>
                 {example.difficulty}
               </span>
@@ -326,14 +328,16 @@ Object.keys(allBalances).forEach((chain) => {
                   : 'bg-gradient-to-r from-chain-blue-500 to-electric-green-500 hover:shadow-glow-blue text-white'
               }`}
             >
-              {isRunning ? (
+              {isRunning
+                ? (
                 <div className="flex items-center">
                   <div className="animate-spin w-4 h-4 border-2 border-white border-t-transparent rounded-full mr-2"></div>
                   Running...
                 </div>
-              ) : (
-                '▶ Run Code'
-              )}
+                  )
+                : (
+                    '▶ Run Code'
+                  )}
             </button>
           </div>
 
@@ -365,15 +369,17 @@ Object.keys(allBalances).forEach((chain) => {
               <span className="ml-2 text-dark-300">node example.js</span>
             </div>
 
-            {isRunning ? (
+            {isRunning
+              ? (
               <div className="space-y-2">
                 <div className="text-yellow-400">⚡ Initializing XChainJS client...</div>
                 <div className="text-chain-blue-400">🔗 Connecting to blockchain networks...</div>
                 <div className="text-electric-green-400 animate-pulse">🔄 Executing transaction...</div>
               </div>
-            ) : (
+                )
+              : (
               <pre className="whitespace-pre-wrap">{currentExample.output}</pre>
-            )}
+                )}
           </div>
         </div>
       </div>

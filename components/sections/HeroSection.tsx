@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { ButtonLink, Icon, IconClass } from '@components'
 
 interface NetworkNode {
@@ -30,9 +30,8 @@ export default function HeroSection () {
     { id: 'avax', name: 'Avalanche', x: 30, y: 70, color: '#e84142', size: 5 },
     { id: 'cosmos', name: 'Cosmos', x: 70, y: 80, color: '#2e3148', size: 5 },
     { id: 'bsc', name: 'BSC', x: 15, y: 60, color: '#f3ba2f', size: 4 },
-    { id: 'poly', name: 'Polygon', x: 85, y: 60, color: '#8247e5', size: 4 },
+    { id: 'poly', name: 'Polygon', x: 85, y: 60, color: '#8247e5', size: 4 }
   ]
-
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-dark-900 via-dark-800 to-chain-blue-900">
@@ -98,7 +97,7 @@ export default function HeroSection () {
         {supportedChainsList.slice(0, 6).map((chain, index) => (
           <div
             key={chain}
-            className={`absolute w-12 h-12 rounded-full bg-gradient-to-r from-chain-blue-500 to-electric-green-500 opacity-20 floating animate-pulse-slow`}
+            className={'absolute w-12 h-12 rounded-full bg-gradient-to-r from-chain-blue-500 to-electric-green-500 opacity-20 floating animate-pulse-slow'}
             style={{
               left: `${20 + (index * 15)}%`,
               top: `${30 + (index % 3) * 20}%`,
