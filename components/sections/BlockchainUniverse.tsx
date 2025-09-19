@@ -133,7 +133,7 @@ export default function BlockchainUniverse () {
         {categories.map((category) => (
           <button
             key={category}
-            onClick={() => setActiveCategory(category)}
+            onClick={() => { setActiveCategory(category) }}
             className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
               activeCategory === category
                 ? 'bg-gradient-to-r from-chain-blue-500 to-electric-green-500 text-white shadow-glow-blue'
@@ -150,7 +150,7 @@ export default function BlockchainUniverse () {
         {filteredChains.map((blockchain) => (
           <div
             key={blockchain.id}
-            onClick={() => setSelectedChain(blockchain)}
+            onClick={() => { setSelectedChain(blockchain) }}
             className="interactive-card glass p-6 rounded-xl cursor-pointer group relative overflow-hidden"
             style={{
               boxShadow: selectedChain?.id === blockchain.id

@@ -19,7 +19,7 @@ export default function DeveloperCommunity () {
           Powering Real Projects
         </h2>
         <p className="text-xl text-primary-light max-w-3xl mx-auto">
-          These projects have already integrated XChainJS to build cross-chain applications. 
+          These projects have already integrated XChainJS to build cross-chain applications.
           Join the growing ecosystem of developers building the multi-chain future.
         </p>
       </div>
@@ -49,7 +49,7 @@ export default function DeveloperCommunity () {
             Comprehensive TypeScript SDK with full type safety and excellent IDE support.
           </p>
         </div>
-        
+
         <div className="glass p-8 rounded-xl text-center">
           <div className="text-4xl mb-4">📚</div>
           <h3 className="text-xl font-semibold text-primary mb-4">Documentation</h3>
@@ -57,7 +57,7 @@ export default function DeveloperCommunity () {
             Detailed guides, examples, and API documentation to get you started quickly.
           </p>
         </div>
-        
+
         <div className="glass p-8 rounded-xl text-center">
           <div className="text-4xl mb-4">👥</div>
           <h3 className="text-xl font-semibold text-primary mb-4">Community</h3>
@@ -91,7 +91,7 @@ export default function DeveloperCommunity () {
       <div className="glass p-8 rounded-xl text-center">
         <h3 className="text-2xl font-bold text-primary mb-4">Ready to Build?</h3>
         <p className="text-lg text-primary-light mb-6 max-w-2xl mx-auto">
-          Start building cross-chain applications with XChainJS. 
+          Start building cross-chain applications with XChainJS.
           From simple balance checks to complex DeFi protocols.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">

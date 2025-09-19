@@ -67,7 +67,7 @@ const swapEstimate = await thorchainAmm.estimateSwap({
           Cross-Chain Development, Simplified
         </h2>
         <p className="text-xl text-primary-light max-w-3xl mx-auto">
-          Building multi-chain applications means juggling dozens of different APIs, standards, and complexities. 
+          Building multi-chain applications means juggling dozens of different APIs, standards, and complexities.
           XChainJS provides unified patterns and tools to make cross-chain development manageable.
         </p>
       </div>
@@ -76,7 +76,7 @@ const swapEstimate = await thorchainAmm.estimateSwap({
       <div className="flex justify-center mb-12">
         <div className="glass p-2 rounded-lg flex">
           <button
-            onClick={() => setActiveTab('problem')}
+            onClick={() => { setActiveTab('problem') }}
             className={`px-6 py-3 rounded-md font-semibold transition-all duration-300 ${
               activeTab === 'problem'
                 ? 'bg-gradient-to-r from-red-500 to-orange-500 text-white shadow-lg'
@@ -86,7 +86,7 @@ const swapEstimate = await thorchainAmm.estimateSwap({
             The Problem
           </button>
           <button
-            onClick={() => setActiveTab('solution')}
+            onClick={() => { setActiveTab('solution') }}
             className={`px-6 py-3 rounded-md font-semibold transition-all duration-300 ${
               activeTab === 'solution'
                 ? 'bg-gradient-to-r from-chain-blue-500 to-electric-green-500 text-white shadow-lg'
@@ -102,8 +102,9 @@ const swapEstimate = await thorchainAmm.estimateSwap({
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Left side - Explanation */}
         <div className="space-y-6">
-          {activeTab === 'problem' ? (
-            <>
+          {activeTab === 'problem'
+            ? (
+              <>
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold text-red-600">
                   Blockchain Fragmentation is Killing Innovation
@@ -136,8 +137,9 @@ const swapEstimate = await thorchainAmm.estimateSwap({
                 </p>
               </div>
             </>
-          ) : (
-            <>
+              )
+            : (
+              <>
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold gradient-text">
                   Unified Patterns, Real Solutions
@@ -166,7 +168,7 @@ const swapEstimate = await thorchainAmm.estimateSwap({
                 <h4 className="font-semibold text-electric-green-800 mb-2">The Result?</h4>
                 <p className="text-electric-green-700">
                   Focus on building great user experiences instead of wrestling with blockchain complexity.
-                  XChainJS handles the cross-chain infrastructure so you don't have to.
+                  XChainJS handles the cross-chain infrastructure so you don&apos;t have to.
                 </p>
               </div>
 
@@ -186,7 +188,7 @@ const swapEstimate = await thorchainAmm.estimateSwap({
                 </div>
               </div>
             </>
-          )}
+              )}
         </div>
 
         {/* Right side - Code comparison */}

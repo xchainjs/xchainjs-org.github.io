@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     {
       rel: 'icon',
       type: 'image/svg+xml',
-      url: '/logos/xchainjs.svg',
+      url: '/logos/xchainjs.svg'
     }
   ],
   robots: {
