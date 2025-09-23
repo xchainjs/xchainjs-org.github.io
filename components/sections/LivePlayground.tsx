@@ -273,32 +273,32 @@ Object.keys(allBalances).forEach((chain) => {
   }
 
   return (
-    <section id="playground" className="py-20 px-4 md:px-16 lg:px-8 max-w-7xl mx-auto">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
+    <section id="playground" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="text-center mb-12 sm:mb-16">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text mb-4 sm:mb-6">
           Try XChainJS in 30 Seconds
         </h2>
-        <p className="text-xl text-primary-light max-w-3xl mx-auto">
+        <p className="text-lg sm:text-xl text-primary-light max-w-3xl mx-auto px-4">
           Interactive code playground with real examples. No setup required -
           just click and see XChainJS in action.
         </p>
       </div>
 
       {/* Example selector */}
-      <div className="flex flex-wrap justify-center gap-4 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-8 sm:mb-12">
         {examples.map((example) => (
           <button
             key={example.id}
             onClick={() => { setActiveExample(example.id) }}
-            className={`p-4 rounded-lg border-2 transition-all duration-300 text-left ${
+            className={`p-4 sm:p-6 rounded-lg border-2 transition-all duration-300 text-left touch-manipulation min-h-[120px] w-full ${
               activeExample === example.id
                 ? 'border-chain-blue-500 bg-chain-blue-50 shadow-glow-blue'
                 : 'border-primary-light glass hover:border-chain-blue-300 hover:shadow-md'
             }`}
           >
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="font-semibold text-primary">{example.title}</h3>
-              <span className={`px-2 py-1 text-xs rounded-full font-medium ${
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2">
+              <h3 className="font-semibold text-primary text-sm sm:text-base">{example.title}</h3>
+              <span className={`px-2 py-1 text-xs rounded-full font-medium self-start sm:self-auto ${
                 example.difficulty === 'Beginner'
 ? 'bg-electric-green-100 text-electric-green-800'
                 : example.difficulty === 'Intermediate'
@@ -308,21 +308,21 @@ Object.keys(allBalances).forEach((chain) => {
                 {example.difficulty}
               </span>
             </div>
-            <p className="text-sm text-primary-lighter">{example.description}</p>
+            <p className="text-xs sm:text-sm text-primary-lighter leading-relaxed">{example.description}</p>
           </button>
         ))}
       </div>
 
       {/* Code playground */}
-      <div className="grid lg:grid-cols-2 gap-8">
+      <div className="flex flex-col xl:grid xl:grid-cols-2 gap-6 lg:gap-8">
         {/* Code editor */}
         <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <h3 className="text-xl font-semibold text-primary">Code Editor</h3>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <h3 className="text-lg sm:text-xl font-semibold text-primary">Code Editor</h3>
             <button
               onClick={simulateRun}
               disabled={isRunning}
-              className={`px-6 py-2 rounded-lg font-semibold transition-all duration-300 ${
+              className={`w-full sm:w-auto px-4 sm:px-6 py-3 sm:py-2 rounded-lg font-semibold transition-all duration-300 touch-manipulation min-h-[44px] flex items-center justify-center text-sm sm:text-base ${
                 isRunning
                   ? 'bg-gray-400 cursor-not-allowed'
                   : 'bg-gradient-to-r from-chain-blue-500 to-electric-green-500 hover:shadow-glow-blue text-white'
@@ -332,11 +332,11 @@ Object.keys(allBalances).forEach((chain) => {
                 ? (
                 <div className="flex items-center">
                   <div className="animate-spin w-4 h-4 border-2 border-white border-t-transparent rounded-full mr-2"></div>
-                  Running...
+                  <span className="text-sm sm:text-base">Running...</span>
                 </div>
                   )
                 : (
-                    '▶ Run Code'
+                    <span className="text-sm sm:text-base">▶ Run Code</span>
                   )}
             </button>
           </div>
@@ -361,9 +361,9 @@ Object.keys(allBalances).forEach((chain) => {
 
         {/* Output panel */}
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-primary">Output</h3>
+          <h3 className="text-lg sm:text-xl font-semibold text-primary">Output</h3>
 
-          <div className="bg-dark-900 text-electric-green-400 p-6 rounded-lg font-mono text-sm min-h-96">
+          <div className="bg-dark-900 text-electric-green-400 p-4 sm:p-6 rounded-lg font-mono text-xs sm:text-sm min-h-64 sm:min-h-96 overflow-x-auto">
             <div className="flex items-center mb-4">
               <span className="text-dark-400">$</span>
               <span className="ml-2 text-dark-300">node example.js</span>
@@ -418,15 +418,15 @@ Object.keys(allBalances).forEach((chain) => {
       </div>
 
       {/* Call to action */}
-      <div className="text-center mt-12">
-        <div className="space-y-4">
-          <h3 className="text-2xl font-semibold text-primary">Ready to build the future?</h3>
-          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+      <div className="text-center mt-8 sm:mt-12">
+        <div className="space-y-4 sm:space-y-6">
+          <h3 className="text-xl sm:text-2xl font-semibold text-primary">Ready to build the future?</h3>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 px-4">
             <a
               href="https://xchainjs.gitbook.io/xchainjs"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-gradient-to-r from-chain-blue-500 to-electric-green-500 text-white font-semibold rounded-lg shadow-glow-blue hover:shadow-glow-green transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-chain-blue-500 to-electric-green-500 text-white font-semibold rounded-lg shadow-glow-blue hover:shadow-glow-green transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 text-center"
             >
               Get Started Now
             </a>
@@ -434,7 +434,7 @@ Object.keys(allBalances).forEach((chain) => {
               href="https://discord.com/invite/7RRmc35UEG"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 border-2 border-primary-light text-primary-light hover:border-primary hover:text-primary font-semibold rounded-lg transition-all duration-300"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-primary-light text-primary-light hover:border-primary hover:text-primary font-semibold rounded-lg transition-all duration-300 text-center"
             >
               Join Discord Community
             </a>
