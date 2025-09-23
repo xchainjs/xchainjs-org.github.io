@@ -74,14 +74,14 @@ export default function RootLayout ({
                 </a>
 
                 {/* Mobile menu button */}
-                <button 
-                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                <button
+                  onClick={() => { setIsMobileMenuOpen(!isMobileMenuOpen) }}
                   className="md:hidden p-3 text-primary-light hover:text-primary transition-colors"
                   aria-label="Toggle mobile menu"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                          d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                          d={isMobileMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'} />
                   </svg>
                 </button>
               </div>
@@ -92,45 +92,45 @@ export default function RootLayout ({
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden fixed inset-0 z-40 pt-16">
-            <div className="fixed inset-0 bg-black/50" onClick={() => setIsMobileMenuOpen(false)} />
+            <div className="fixed inset-0 bg-black/50" onClick={() => { setIsMobileMenuOpen(false) }} />
             <nav className="relative glass m-4 rounded-xl p-6">
               <div className="space-y-4">
-                <a 
-                  href="#playground" 
+                <a
+                  href="#playground"
                   className="block py-3 px-4 text-primary-light hover:text-primary text-lg transition-colors rounded-lg hover:bg-primary-light/10"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => { setIsMobileMenuOpen(false) }}
                 >
                   Playground
                 </a>
-                <a 
-                  href="#chains" 
+                <a
+                  href="#chains"
                   className="block py-3 px-4 text-primary-light hover:text-primary text-lg transition-colors rounded-lg hover:bg-primary-light/10"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => { setIsMobileMenuOpen(false) }}
                 >
                   Chains
                 </a>
-                <a 
-                  href="#success-stories" 
+                <a
+                  href="#success-stories"
                   className="block py-3 px-4 text-primary-light hover:text-primary text-lg transition-colors rounded-lg hover:bg-primary-light/10"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => { setIsMobileMenuOpen(false) }}
                 >
                   Success Stories
                 </a>
-                <a 
-                  href="https://xchainjs.gitbook.io/xchainjs" 
+                <a
+                  href="https://xchainjs.gitbook.io/xchainjs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block py-3 px-4 text-primary-light hover:text-primary text-lg transition-colors rounded-lg hover:bg-primary-light/10"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => { setIsMobileMenuOpen(false) }}
                 >
                   Docs
                 </a>
-                <a 
-                  href="https://discord.com/invite/7RRmc35UEG" 
+                <a
+                  href="https://discord.com/invite/7RRmc35UEG"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full mt-6 px-4 py-3 bg-gradient-to-r from-chain-blue-500 to-electric-green-500 text-white font-semibold rounded-lg text-center transition-all duration-300 hover:shadow-glow-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => { setIsMobileMenuOpen(false) }}
                 >
                   Get Started
                 </a>

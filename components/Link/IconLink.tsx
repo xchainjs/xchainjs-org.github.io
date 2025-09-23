@@ -8,9 +8,9 @@ interface Props {
 
 export function IconLink ({ iconClass, url, iconHoverColor }: Props) {
   return (
-    <a 
-      href={url} 
-      target="_blank" 
+    <a
+      href={url}
+      target="_blank"
       rel="noreferrer"
       className="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200 touch-manipulation min-h-[44px] min-w-[44px] flex items-center justify-center"
     >
