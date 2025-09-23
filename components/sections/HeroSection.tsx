@@ -34,7 +34,7 @@ export default function HeroSection () {
   ]
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-dark-900 via-dark-800 to-chain-blue-900">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-dark-900 via-dark-800 to-chain-blue-900 px-4 py-16">
       {/* Animated background elements */}
       <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
 
@@ -114,19 +114,19 @@ export default function HeroSection () {
       {/* Main content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Real metrics */}
-        <div className="flex justify-center space-x-8 mb-8">
-          <div className="glass text-on-dark p-4 rounded-lg">
-            <div className="text-2xl font-bold gradient-text">{weeklyDownloads}</div>
-            <div className="text-sm text-dark-300">Weekly Downloads</div>
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mb-8 px-4">
+          <div className="glass text-on-dark p-4 sm:p-6 rounded-lg flex-1 max-w-xs mx-auto">
+            <div className="text-xl sm:text-2xl font-bold gradient-text">{weeklyDownloads}</div>
+            <div className="text-xs sm:text-sm text-dark-300">Weekly Downloads</div>
           </div>
-          <div className="glass text-on-dark p-4 rounded-lg">
-            <div className="text-2xl font-bold gradient-text">{supportedChainsCount}+</div>
-            <div className="text-sm text-dark-300">Supported Chains</div>
+          <div className="glass text-on-dark p-4 sm:p-6 rounded-lg flex-1 max-w-xs mx-auto">
+            <div className="text-xl sm:text-2xl font-bold gradient-text">{supportedChainsCount}+</div>
+            <div className="text-xs sm:text-sm text-dark-300">Supported Chains</div>
           </div>
         </div>
 
         {/* Main headline */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-on-dark mb-6 leading-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-on-dark mb-6 leading-tight">
           Build
           <span className="gradient-text"> Anywhere</span>.
           <br />
@@ -135,7 +135,7 @@ export default function HeroSection () {
         </h1>
 
         {/* Subheading */}
-        <p className="text-xl md:text-2xl text-dark-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl lg:text-2xl text-dark-300 mb-8 max-w-4xl mx-auto leading-relaxed px-4">
           The most comprehensive cross-chain development toolkit.
           Support for <span className="text-electric-green-400 font-semibold">20+ blockchains</span> with
           <span className="text-chain-blue-400 font-semibold"> unified APIs</span> that make
@@ -143,10 +143,10 @@ export default function HeroSection () {
         </p>
 
         {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-12 px-4">
           <a
             href="#playground"
-            className="px-8 py-4 bg-gradient-to-r from-chain-blue-500 to-electric-green-500 text-white font-semibold rounded-lg shadow-glow-blue hover:shadow-glow-green transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-chain-blue-500 to-electric-green-500 text-white font-semibold rounded-lg shadow-glow-blue hover:shadow-glow-green transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 text-center"
           >
             Try in 30 Seconds
           </a>
@@ -158,30 +158,30 @@ export default function HeroSection () {
         </div>
 
         {/* Real projects showcase */}
-        <div className="glass p-6 rounded-xl max-w-4xl mx-auto">
-          <p className="text-dark-300 mb-4">Powering real cross-chain projects</p>
-          <div className="flex flex-wrap justify-center items-center gap-6">
+        <div className="glass p-4 sm:p-6 rounded-xl max-w-4xl mx-auto">
+          <p className="text-dark-300 mb-4 text-sm sm:text-base">Powering real cross-chain projects</p>
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
             <div className="flex items-center space-x-2">
               <Icon iconClass={IconClass.ASGARDEX} className="w-5 h-5 text-dark-300" />
-              <span className="text-dark-200 text-sm">ASGARDEX</span>
+              <span className="text-dark-200 text-xs sm:text-sm">ASGARDEX</span>
             </div>
             <div className="flex items-center space-x-2">
               <Icon iconClass={IconClass.LEAP_WALLET} className="w-5 h-5 text-dark-300" />
-              <span className="text-dark-200 text-sm">Leap Wallet</span>
+              <span className="text-dark-200 text-xs sm:text-sm">Leap Wallet</span>
             </div>
             <div className="flex items-center space-x-2">
               <Icon iconClass={IconClass.SWAPPER} className="w-5 h-5 text-dark-300" />
-              <span className="text-dark-200 text-sm">Swapper</span>
+              <span className="text-dark-200 text-xs sm:text-sm">Swapper</span>
             </div>
             <div className="flex items-center space-x-2">
               <Icon iconClass={IconClass.LENDS} className="w-5 h-5 text-dark-300" />
-              <span className="text-dark-200 text-sm">Lends</span>
+              <span className="text-dark-200 text-xs sm:text-sm">Lends</span>
             </div>
             <div className="flex items-center space-x-2">
               <Icon iconClass={IconClass.CACAOSWAP} className="w-5 h-5 text-dark-300" />
-              <span className="text-dark-200 text-sm">CacaoSwap</span>
+              <span className="text-dark-200 text-xs sm:text-sm">CacaoSwap</span>
             </div>
-            <span className="text-dark-400 text-sm">and more...</span>
+            <span className="text-dark-400 text-xs sm:text-sm">and more...</span>
           </div>
         </div>
       </div>

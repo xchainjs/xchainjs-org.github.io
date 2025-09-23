@@ -108,9 +108,136 @@ body {
   border-radius: 12px;
   padding: 1.5rem;
   overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+  width: 100%;
+  max-width: 100%;
+}
+
+.code-block code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: inherit;
+  line-height: 1.5;
+  white-space: pre;
+  word-wrap: normal;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .code-block {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    border-radius: 8px;
+    margin: 0 -1rem;
+    width: calc(100% + 2rem);
+    max-width: calc(100vw - 2rem);
+  }
+  
+  .code-block pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
+  
+  .code-block code {
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+  }
 }
 
 .code-keyword { color: #7c3aed; }
 .code-string { color: #10b981; }
 .code-comment { color: #64748b; }
 .code-function { color: #0d87ff; }
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  /* Ensure touch targets meet minimum size requirements */
+  .touch-manipulation {
+    touch-action: manipulation;
+    min-height: 44px;
+  }
+  
+  /* Improve button touch targets */
+  button, a, .cursor-pointer {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Prevent zoom on input focus */
+  input, textarea, select {
+    font-size: 16px;
+  }
+  
+  /* Smooth scrolling behavior */
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Improve text selection on mobile */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Responsive text utility classes */
+.responsive-text-base { 
+  font-size: 0.875rem; 
+}
+
+@media (min-width: 640px) {
+  .responsive-text-base { 
+    font-size: 1rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-text-base { 
+    font-size: 1.125rem; 
+  }
+}
+
+.responsive-text-lg { 
+  font-size: 1rem; 
+}
+
+@media (min-width: 640px) {
+  .responsive-text-lg { 
+    font-size: 1.125rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-text-lg { 
+    font-size: 1.25rem; 
+  }
+}
+
+.responsive-text-xl { 
+  font-size: 1.125rem; 
+}
+
+@media (min-width: 640px) {
+  .responsive-text-xl { 
+    font-size: 1.25rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-text-xl { 
+    font-size: 1.5rem; 
+  }
+}
