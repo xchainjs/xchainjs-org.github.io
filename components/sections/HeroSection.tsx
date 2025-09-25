@@ -14,13 +14,13 @@ interface NetworkNode {
 
 export default function HeroSection () {
   const [weeklyDownloads] = useState(433)
-  const [supportedChainsCount] = useState(20)
+  const [supportedChainsCount] = useState(21)
 
   const supportedChainsList = [
     'Bitcoin', 'Ethereum', 'Thorchain', 'Cosmos', 'Avalanche', 'BSC',
     'Polygon', 'Arbitrum', 'Optimism', 'Solana', 'Cardano', 'Polkadot',
     'Chainlink', 'Litecoin', 'Bitcoin Cash', 'Dogecoin', 'Mayachain',
-    'Kujira', 'Osmosis', 'Juno', 'Stargaze', 'Akash', 'Radix'
+    'Kujira', 'Osmosis', 'Juno', 'Stargaze', 'Akash', 'Radix', 'TRON'
   ]
 
   const networkNodes: NetworkNode[] = [

@@ -107,6 +107,16 @@ export default function BlockchainUniverse () {
       description: 'Cross-chain liquidity for long-tail assets',
       features: ['Cross-chain LP', 'Native Swaps', 'Long-tail Assets'],
       volume24h: '$12M'
+    },
+    {
+      id: 'tron',
+      name: 'TRON',
+      symbol: 'TRX',
+      color: '#ff060a',
+      category: 'L1',
+      description: 'High-throughput blockchain platform for decentralized applications',
+      features: ['High TPS', 'Low Fees', 'DApp Ecosystem'],
+      volume24h: '$450M'
     }
   ]
 
@@ -275,7 +285,7 @@ console.log('Transaction:', txHash)`}</code>
       {/* Real stats */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-12 sm:mt-16">
         <div className="text-center">
-          <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">20+</div>
+          <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">21+</div>
           <div className="text-xs sm:text-sm text-primary-lighter">Supported Chains</div>
         </div>
         <div className="text-center">

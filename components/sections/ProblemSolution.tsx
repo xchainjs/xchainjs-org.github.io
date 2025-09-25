@@ -175,7 +175,7 @@ const swapEstimate = await thorchainAmm.estimateSwap({
               {/* Real metrics */}
               <div className="grid grid-cols-3 gap-6 mt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">20+</div>
+                  <div className="text-3xl font-bold gradient-text">21+</div>
                   <div className="text-sm text-primary-lighter">Supported Chains</div>
                 </div>
                 <div className="text-center">
