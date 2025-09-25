@@ -105,7 +105,7 @@ export default function Home () {
                   <div className="text-xs sm:text-sm text-primary-lighter">Dependents</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold gradient-text">20+</div>
+                  <div className="text-2xl sm:text-3xl font-bold gradient-text">21+</div>
                   <div className="text-xs sm:text-sm text-primary-lighter">Supported Chains</div>
                 </div>
               </div>
