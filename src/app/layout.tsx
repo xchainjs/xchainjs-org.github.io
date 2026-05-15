@@ -22,6 +22,26 @@ export default function RootLayout ({
 
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content={[
+            "default-src 'self'",
+            "script-src 'self' 'unsafe-inline' https://client.crisp.chat https://settings.crisp.chat",
+            "style-src 'self' 'unsafe-inline' https://client.crisp.chat",
+            "img-src 'self' data: blob: https://image.crisp.chat https://client.crisp.chat https://storage.crisp.chat",
+            "font-src 'self' data: https://client.crisp.chat",
+            "connect-src 'self' https://client.crisp.chat https://storage.crisp.chat wss://client.relay.crisp.chat",
+            "media-src 'self' https://client.crisp.chat",
+            'frame-src https://game.crisp.chat',
+            "object-src 'none'",
+            "base-uri 'self'",
+            "form-action 'self'",
+            "frame-ancestors 'none'"
+          ].join('; ')}
+        />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+      </head>
       <body className="font-body text-primary antialiased">
         {/* Modern header */}
         <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-primary-light">
