@@ -93,11 +93,11 @@ export default function Home () {
               <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6 text-center">Developer Metrics</h3>
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold gradient-text">433</div>
+                  <div className="text-2xl sm:text-3xl font-bold gradient-text">1.2k</div>
                   <div className="text-xs sm:text-sm text-primary-lighter">Weekly Downloads</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold gradient-text">128</div>
+                  <div className="text-2xl sm:text-3xl font-bold gradient-text">133</div>
                   <div className="text-xs sm:text-sm text-primary-lighter">GitHub Stars</div>
                 </div>
                 <div className="text-center">
@@ -114,13 +114,13 @@ export default function Home () {
             <div className="bg-gradient-to-br from-dark-800 to-dark-900 p-4 sm:p-6 lg:p-8 rounded-xl text-white">
               <h3 className="text-lg sm:text-xl font-bold mb-4 text-center sm:text-left">Latest Release</h3>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
-                <span className="font-mono text-electric-green-400 text-center sm:text-left">v2.1.0</span>
-                <span className="text-dark-300 text-sm text-center sm:text-right">Released 2 days ago</span>
+                <span className="font-mono text-electric-green-400 text-center sm:text-left">aggregator v2.3.5</span>
+                <span className="text-dark-300 text-sm text-center sm:text-right">Released June 2026</span>
               </div>
               <p className="text-dark-200 mb-4 text-sm sm:text-base">
-                • Added Radix chain support<br/>
-                • Improved error handling<br/>
-                • 15% performance boost
+                • New chain clients: Base, Sui, XRP, Zcash &amp; Dash<br/>
+                • Multi-protocol routing across THORChain, MAYAChain &amp; Chainflip<br/>
+                • Improved EVM &amp; UTXO provider support
               </p>
               <button className="w-full sm:w-auto px-4 py-2 bg-chain-blue-500 text-white rounded-lg hover:bg-chain-blue-600 transition-colors text-sm sm:text-base">
                 View Changelog

@@ -179,7 +179,7 @@ const swapEstimate = await thorchainAmm.estimateSwap({
                   <div className="text-sm text-primary-lighter">Supported Chains</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">433</div>
+                  <div className="text-3xl font-bold gradient-text">1.2k</div>
                   <div className="text-sm text-primary-lighter">Weekly Downloads</div>
                 </div>
                 <div className="text-center">

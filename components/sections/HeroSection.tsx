@@ -13,14 +13,14 @@ interface NetworkNode {
 }
 
 export default function HeroSection () {
-  const [weeklyDownloads] = useState(433)
+  const [weeklyDownloads] = useState('1.2k')
   const [supportedChainsCount] = useState(21)
 
   const supportedChainsList = [
-    'Bitcoin', 'Ethereum', 'Thorchain', 'Cosmos', 'Avalanche', 'BSC',
-    'Polygon', 'Arbitrum', 'Optimism', 'Solana', 'Cardano', 'Polkadot',
-    'Chainlink', 'Litecoin', 'Bitcoin Cash', 'Dogecoin', 'Mayachain',
-    'Kujira', 'Osmosis', 'Juno', 'Stargaze', 'Akash', 'Radix', 'TRON'
+    'Bitcoin', 'Ethereum', 'THORChain', 'Cosmos', 'Avalanche', 'BSC',
+    'Base', 'Arbitrum', 'Solana', 'Cardano', 'Sui', 'XRP',
+    'Litecoin', 'Bitcoin Cash', 'Dogecoin', 'Dash', 'Zcash',
+    'MAYAChain', 'Kujira', 'Radix', 'TRON'
   ]
 
   const networkNodes: NetworkNode[] = [
@@ -30,7 +30,7 @@ export default function HeroSection () {
     { id: 'avax', name: 'Avalanche', x: 30, y: 70, color: '#e84142', size: 5 },
     { id: 'cosmos', name: 'Cosmos', x: 70, y: 80, color: '#2e3148', size: 5 },
     { id: 'bsc', name: 'BSC', x: 15, y: 60, color: '#f3ba2f', size: 4 },
-    { id: 'poly', name: 'Polygon', x: 85, y: 60, color: '#8247e5', size: 4 }
+    { id: 'base', name: 'Base', x: 85, y: 60, color: '#0052ff', size: 4 }
   ]
 
   return (
@@ -137,7 +137,7 @@ export default function HeroSection () {
         {/* Subheading */}
         <p className="text-lg md:text-xl lg:text-2xl text-dark-300 mb-8 max-w-4xl mx-auto leading-relaxed px-4">
           The most comprehensive cross-chain development toolkit.
-          Support for <span className="text-electric-green-400 font-semibold">20+ blockchains</span> with
+          Support for <span className="text-electric-green-400 font-semibold">21+ blockchains</span> with
           <span className="text-chain-blue-400 font-semibold"> unified APIs</span> that make
           cross-chain development as simple as single-chain development.
         </p>
