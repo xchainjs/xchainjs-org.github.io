@@ -2,6 +2,7 @@ import {
   HeroSection,
   ProblemSolution,
   BlockchainUniverse,
+  SuiteOverview,
   LivePlayground,
   DeveloperCommunity,
   ButtonLink,
@@ -21,6 +22,9 @@ export default function Home () {
 
       {/* Interactive Blockchain Universe Map */}
       <BlockchainUniverse />
+
+      {/* The XChainJS Suite - modular package overview */}
+      <SuiteOverview />
 
       {/* Live Code Playground - Try in 30 Seconds */}
       <LivePlayground />

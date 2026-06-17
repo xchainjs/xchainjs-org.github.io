@@ -9,6 +9,7 @@ import { Icon, IconClass } from './Icon'
 import HeroSection from './sections/HeroSection'
 import ProblemSolution from './sections/ProblemSolution'
 import BlockchainUniverse from './sections/BlockchainUniverse'
+import SuiteOverview from './sections/SuiteOverview'
 import LivePlayground from './sections/LivePlayground'
 import DeveloperCommunity from './sections/DeveloperCommunity'
 
@@ -25,6 +26,7 @@ export {
   HeroSection,
   ProblemSolution,
   BlockchainUniverse,
+  SuiteOverview,
   LivePlayground,
   DeveloperCommunity
 }
