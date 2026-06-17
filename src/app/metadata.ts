@@ -3,11 +3,11 @@ import { type Metadata } from 'next'
 export const metadata: Metadata = {
   metadataBase: new URL('https://xchainjs.org'),
   title: 'XChainJS - Build Anywhere. Connect Everything.',
-  description: 'The most comprehensive cross-chain development toolkit. Support 20+ blockchains with unified APIs that make cross-chain development simple.',
+  description: 'The most comprehensive cross-chain development toolkit. Support 21+ blockchains with unified APIs that make cross-chain development simple.',
   keywords: 'XChainJS, cross-chain, blockchain development, DeFi, THORChain, cryptocurrency, multi-chain, developer toolkit',
   openGraph: {
     title: 'XChainJS - Build Anywhere. Connect Everything.',
-    description: 'The most comprehensive cross-chain development toolkit for 20+ blockchains.',
+    description: 'The most comprehensive cross-chain development toolkit for 21+ blockchains.',
     url: 'https://xchainjs.org',
     siteName: 'XChainJS',
     type: 'website'
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'XChainJS - Build Anywhere. Connect Everything.',
-    description: 'The most comprehensive cross-chain development toolkit for 20+ blockchains.',
+    description: 'The most comprehensive cross-chain development toolkit for 21+ blockchains.',
     creator: '@xchainjs'
   },
   icons: [

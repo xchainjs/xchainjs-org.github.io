@@ -70,11 +70,11 @@ export default function DeveloperCommunity () {
       {/* Real community stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
         <div className="text-center">
-          <div className="text-4xl font-bold gradient-text mb-2">128</div>
+          <div className="text-4xl font-bold gradient-text mb-2">133</div>
           <div className="text-primary-lighter">GitHub Stars</div>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold gradient-text mb-2">108</div>
+          <div className="text-4xl font-bold gradient-text mb-2">111</div>
           <div className="text-primary-lighter">GitHub Forks</div>
         </div>
         <div className="text-center">
@@ -82,7 +82,7 @@ export default function DeveloperCommunity () {
           <div className="text-primary-lighter">NPM Dependents</div>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold gradient-text mb-2">433</div>
+          <div className="text-4xl font-bold gradient-text mb-2">1.2k</div>
           <div className="text-primary-lighter">Weekly Downloads</div>
         </div>
       </div>

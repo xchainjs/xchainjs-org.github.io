@@ -69,6 +69,9 @@ export default function RootLayout ({
                 <a href="#chains" className="text-primary-light hover:text-primary transition-colors">
                   Chains
                 </a>
+                <a href="#suite" className="text-primary-light hover:text-primary transition-colors">
+                  Suite
+                </a>
                 <a href="#success-stories" className="text-primary-light hover:text-primary transition-colors">
                   Success Stories
                 </a>
@@ -128,6 +131,13 @@ export default function RootLayout ({
                   onClick={() => { setIsMobileMenuOpen(false) }}
                 >
                   Chains
+                </a>
+                <a
+                  href="#suite"
+                  className="block py-3 px-4 text-primary-light hover:text-primary text-lg transition-colors rounded-lg hover:bg-primary-light/10"
+                  onClick={() => { setIsMobileMenuOpen(false) }}
+                >
+                  Suite
                 </a>
                 <a
                   href="#success-stories"

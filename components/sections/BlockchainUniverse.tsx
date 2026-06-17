@@ -79,14 +79,14 @@ export default function BlockchainUniverse () {
       volume24h: '$890M'
     },
     {
-      id: 'polygon',
-      name: 'Polygon',
-      symbol: 'MATIC',
-      color: '#8247e5',
+      id: 'base',
+      name: 'Base',
+      symbol: 'ETH',
+      color: '#0052ff',
       category: 'L2',
-      description: 'Ethereum scaling and infrastructure development',
-      features: ['PoS Chain', 'zkEVM', 'Developer Tools'],
-      volume24h: '$650M'
+      description: 'Ethereum L2 built on the OP Stack',
+      features: ['OP Stack', 'Low Fees', 'EVM Compatible'],
+      volume24h: '$420M'
     },
     {
       id: 'bsc',
@@ -117,6 +117,46 @@ export default function BlockchainUniverse () {
       description: 'High-throughput blockchain platform for decentralized applications',
       features: ['High TPS', 'Low Fees', 'DApp Ecosystem'],
       volume24h: '$450M'
+    },
+    {
+      id: 'sui',
+      name: 'Sui',
+      symbol: 'SUI',
+      color: '#4da2ff',
+      category: 'L1',
+      description: 'High-performance L1 powered by the Move language',
+      features: ['Move Language', 'Parallel Execution', 'Low Latency'],
+      volume24h: '$210M'
+    },
+    {
+      id: 'ripple',
+      name: 'XRP Ledger',
+      symbol: 'XRP',
+      color: '#23292f',
+      category: 'L1',
+      description: 'Fast, low-cost payments-focused blockchain',
+      features: ['Payments', 'Fast Settlement', 'Low Fees'],
+      volume24h: '$1.1B'
+    },
+    {
+      id: 'dash',
+      name: 'Dash',
+      symbol: 'DASH',
+      color: '#008ce7',
+      category: 'Bitcoin',
+      description: 'Digital cash with instant, low-cost transactions',
+      features: ['InstantSend', 'UTXO Model', 'Low Fees'],
+      volume24h: '$45M'
+    },
+    {
+      id: 'zcash',
+      name: 'Zcash',
+      symbol: 'ZEC',
+      color: '#f4b728',
+      category: 'Bitcoin',
+      description: 'Privacy-protecting digital currency using zk-SNARKs',
+      features: ['zk-SNARKs', 'Shielded Tx', 'UTXO Model'],
+      volume24h: '$60M'
     }
   ]
 
@@ -289,7 +329,7 @@ console.log('Transaction:', txHash)`}</code>
           <div className="text-xs sm:text-sm text-primary-lighter">Supported Chains</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">128</div>
+          <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">133</div>
           <div className="text-xs sm:text-sm text-primary-lighter">GitHub Stars</div>
         </div>
         <div className="text-center">
@@ -297,7 +337,7 @@ console.log('Transaction:', txHash)`}</code>
           <div className="text-xs sm:text-sm text-primary-lighter">NPM Dependents</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">433</div>
+          <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">1.2k</div>
           <div className="text-xs sm:text-sm text-primary-lighter">Weekly Downloads</div>
         </div>
       </div>
